@@ -3,11 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Document</title>
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body>
-    
-    
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-bold text-blue-600">UK Landmarks</a>
+            <nav class="space-x-4">
+                <a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="/map.html" class="text-gray-600 hover:text-blue-600">Map</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-container flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">UK Landmarks</h1>
+            <p class="text-lg text-gray-600 max-w-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+        </div>
+        <div class="maps-slider-container mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="map-container">
+                <img src="https://picsum.photos/1200/600" alt="Map 1" class="map-image w-full h-96 object-cover rounded-lg">
+            </div>
+            <div class="swiper image-slider w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://picsum.photos/800/400?random=1" alt="Landmark 1" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://picsum.photos/800/400?random=2" alt="Landmark 2" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://picsum.photos/800/400?random=3" alt="Landmark 3" class="w-full h-96 object-cover rounded-lg">
+                    </div>
+                </div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.image-slider', {
+            // Optional parameters
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 </html>
