@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uk-landmarks-map-website", "uk-landmarks-map-website\uk-landmarks-map-website.csproj", "{02F2EAD0-8E22-4509-BA7B-2F99BDA45AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02F2EAD0-8E22-4509-BA7B-2F99BDA45AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02F2EAD0-8E22-4509-BA7B-2F99BDA45AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02F2EAD0-8E22-4509-BA7B-2F99BDA45AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02F2EAD0-8E22-4509-BA7B-2F99BDA45AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78BEC7C4-AA88-4605-A62B-41808C63B8F0}
+	EndGlobalSection
+EndGlobal
