@@ -8,24 +8,30 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 min-h-screen flex flex-col">
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/index.html" class="text-2xl font-bold text-blue-600">UK Landmarks</a>
+            <a href="index.html" class="text-2xl font-bold text-blue-600">EXPLORE UK</a>
             <nav class="space-x-4">
-                <a href="/index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="/map.html" class="text-gray-600 hover:text-blue-600">Map</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="map.html" class="text-gray-600 hover:text-blue-600">Map</a>
             </nav>
         </div>
     </header>
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-4 py-8 flex-grow">
         <div class="text-container flex flex-col items-center justify-center text-center">
             <h1 class="text-4xl font-bold text-gray-800 mb-4">UK Landmarks</h1>
             <p class="text-lg text-gray-600 max-w-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
         </div>
+       <!-- Add image carousel -->
         <div class="maps-slider-container mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="map-container">
-                <img src="https://picsum.photos/1200/600" alt="Map 1" class="map-image w-full h-96 object-cover rounded-lg">
+                <a href="map.html" class="block relative group">
+                    <img src="https://picsum.photos/1200/600" alt="Interactive Map" class="w-full h-96 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white text-2xl font-bold">View Interactive Map</span>
+                    </div>
+                </a>
             </div>
             <div class="swiper image-slider w-full">
                 <div class="swiper-wrapper">
@@ -41,24 +47,38 @@
                 </div>
                 <!-- Add pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add navigation buttons -->
+                <!-- Add carousel arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
     </main>
-
+    <!-- Footer basic layout -->
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm">© 2025 EXPLORE UK. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Initialize Swiper
+        // Initialise Swiper
         const swiper = new Swiper('.image-slider', {
-            // Optional parameters
+            // Parameters for constant loop
             loop: true,
             autoplay: {
                 delay: 3000,
             },
-            // If we need pagination
+            // Pagination interaction
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

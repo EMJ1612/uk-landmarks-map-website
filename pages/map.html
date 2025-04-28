@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Landmarks Map</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <style>
+        #map { 
+            height: calc(100vh - 8rem); /* Accounts for header and footer */
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">EXPLORE UK</a>
+            <nav class="space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="map.html" class="text-gray-600 hover:text-blue-600">Map</a>
+            </nav>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <div id="map" class="w-full"></div>
+    </main>
+    <footer class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm">© 2025 EXPLORE UK. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    <script>
+        // Initialise map
+        const map = L.map('map').setView([54.5, -2], 6); // Centered on the UK
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add some example markers for UK landmarks
+        const landmarks = [
+            {
+                name: "Big Ben",
+                location: [51.5007, -0.1246],
+            },
+            {
+                name: "Stonehenge",
+                location: [51.1789, -1.8262],
+            },
+            {
+                name: "Edinburgh Castle",
+                location: [55.9486, -3.2008],
+            },
+
+        ];
+
+        // Add markers to the map
+        landmarks.forEach(landmark => {
+            const marker = L.marker(landmark.location).addTo(map);
+            marker.bindPopup(`<b>${landmark.name}</b>`);
+        });
+    </script>
+</body>
+</html>
+
