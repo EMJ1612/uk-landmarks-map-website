@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UK Landmarks Map</title>
+    <title>Map ┃ EXPLORE UK</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -28,6 +28,22 @@
             transform: translateX(-100%);
             transition: transform 0.3s ease-in-out;
         }
+        .close-button {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #4a5568;
+            padding: 0.25rem;
+            line-height: 1;
+            z-index: 1001;
+        }
+        .close-button:hover {
+            color: #1a365d;
+        }
         .side-panel.active {
             transform: translateX(0);
         }
@@ -47,12 +63,35 @@
             color: #4a5568;
             line-height: 1.6;
         }
+        .learn-more-button {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            background-color: #2563eb;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            z-index: 1001;
+        }
+        .learn-more-button:hover {
+            background-color: #1d4ed8;
+        }
+        .landmark-content-wrapper {
+            position: relative;
+            padding-bottom: 3rem;
+        }
         .map-container {
             margin-left: 0;
             transition: margin-left 0.3s ease-in-out;
         }
         .map-container.with-panel {
             margin-left: 350px;
+        }
+        #landmarkContent {
+            padding-top: 2rem;
         }
     </style>
 </head>
@@ -68,6 +107,7 @@
     </header>
     <main class="flex-grow relative">
         <div class="side-panel" id="landmarkPanel">
+            <button class="close-button" id="closePanel">×</button>
             <div id="landmarkContent">
                 <!-- Content will be dynamically inserted here -->
             </div>
@@ -103,44 +143,173 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Add some example markers for UK landmarks
-        const landmarks = [
-            {
-                name: "Big Ben",
-                location: [51.5007, -0.1246],
-                description: "The iconic clock tower of the Palace of Westminster, officially known as the Elizabeth Tower. Standing at 96 meters tall, it's one of London's most famous landmarks and a symbol of the United Kingdom.",
-                image: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            },
-            {
-                name: "Stonehenge",
-                location: [51.1789, -1.8262],
-                description: "A prehistoric monument in Wiltshire, England, consisting of a ring of standing stones. Built around 3000 BC, it's one of the most famous landmarks in the UK and a UNESCO World Heritage Site.",
-                image: "https://images.unsplash.com/photo-QMwbv0K8Ves?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            },
-            {
-                name: "Edinburgh Castle",
-                location: [55.9486, -3.2008],
-                description: "A historic fortress which dominates the skyline of Edinburgh, Scotland. Built on Castle Rock, it has been a royal residence, military garrison, and prison throughout its long history.",
-                image: "https://images.unsplash.com/photo-1513618363798-765d6a4b0a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            }
-        ];
+        // Function to fetch image from Wikimedia Commons
+        async function fetchLandmarkImage(landmarkName) {
+            try {
+                // Manual image URLs for specific landmarks that had image issues
+                if (landmarkName === "Snowdonia National Park") {
+                    return "https://res.cloudinary.com/ds4xzrzo1/image/upload/v1745949500/snowdonia_flfezc.jpg";
+                }
+                if (landmarkName === "Roman Baths") {
+                    return "https://res.cloudinary.com/ds4xzrzo1/image/upload/v1745949581/roman_baths_fqrn4w.jpg";
+                }
+                if (landmarkName === "Lake District") {
+                    return "https://res.cloudinary.com/ds4xzrzo1/image/upload/v1745951346/lake_district_xvigfs.jpg";
+                }
 
-        // Get DOM elements
-        const landmarkPanel = document.getElementById('landmarkPanel');
-        const landmarkContent = document.getElementById('landmarkContent');
-        const mapContainer = document.getElementById('mapContainer');
+                // Wikipedia page for the landmark
+                const searchUrl = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&titles=${encodeURIComponent(landmarkName)}&pithumbsize=500&origin=*`;
+                const response = await fetch(searchUrl);
+                const data = await response.json();
+                
+                const pages = data.query.pages;
+                const pageId = Object.keys(pages)[0];
+                const imageUrl = pages[pageId].thumbnail?.source;
+                
+                if (imageUrl) {
+                    return imageUrl;
+                }
+                
+                // If no image found, try a more general search for relevant image
+                const searchQuery = `${landmarkName} UK landmark`;
+                const commonsSearchUrl = `https://commons.wikimedia.org/w/api.php?action=query&format=json&list=search&srsearch=${encodeURIComponent(searchQuery)}&srnamespace=6&srlimit=1&origin=*`;
+                const commonsResponse = await fetch(commonsSearchUrl);
+                const commonsData = await commonsResponse.json();
+                
+                if (commonsData.query.search.length > 0) {
+                    const title = commonsData.query.search[0].title;
+                    const imageInfoUrl = `https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo&iiprop=url&titles=${encodeURIComponent(title)}&origin=*`;
+                    const imageInfoResponse = await fetch(imageInfoUrl);
+                    const imageInfoData = await imageInfoResponse.json();
+                    
+                    const imagePages = imageInfoData.query.pages;
+                    const imagePageId = Object.keys(imagePages)[0];
+                    return imagePages[imagePageId].imageinfo[0].url;
+                }
+                
+                return null;
+            } catch (error) {
+                console.error('Error fetching image:', error);
+                return null;
+            }
+        }
 
         // Function to show landmark details
-        function showLandmarkDetails(landmark) {
+        async function showLandmarkDetails(landmark) {
+            const imageUrl = await fetchLandmarkImage(landmark.name);
             const content = `
-                <img src="${landmark.image}" alt="${landmark.name}">
+                <div class="image-container">
+                    <img src="${imageUrl}" 
+                         alt="${landmark.name}" 
+                         style="width: 100%; height: 200px; object-fit: cover;"
+                         onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/United_Kingdom_location_map.svg/500px-United_Kingdom_location_map.svg.png';">
+                </div>
                 <h3>${landmark.name}</h3>
                 <p>${landmark.description}</p>
+                <a href="#" class="learn-more-button">Learn More</a>
             `;
             landmarkContent.innerHTML = content;
             landmarkPanel.classList.add('active');
             mapContainer.classList.add('with-panel');
         }
+
+        // Get DOM elements
+        const landmarkPanel = document.getElementById('landmarkPanel');
+        const landmarkContent = document.getElementById('landmarkContent');
+        const mapContainer = document.getElementById('mapContainer');
+        const closeButton = document.getElementById('closePanel');
+
+        // Function to close the panel
+        function closePanel() {
+            landmarkPanel.classList.remove('active');
+            mapContainer.classList.remove('with-panel');
+        }
+
+        // Add close button event listener
+        closeButton.addEventListener('click', closePanel);
+
+        // Update landmarks array to remove hardcoded image URLs
+        const landmarks = [
+            // England
+            {
+                name: "Big Ben",
+                location: [51.5007, -0.1246],
+                description: "The iconic clock tower of the Palace of Westminster, officially known as the Elizabeth Tower. Standing at 96 meters tall, it's one of London's most famous landmarks."
+            },
+            {
+                name: "Tower of London",
+                location: [51.5081, -0.0759],
+                description: "A historic castle on the north bank of the River Thames, founded in 1066. It has served as a royal palace, prison, and home to the Crown Jewels."
+            },
+            {
+                name: "Stonehenge",
+                location: [51.1789, -1.8262],
+                description: "A prehistoric monument in Wiltshire, consisting of a ring of standing stones. Built around 3000 BC, it's one of the most famous landmarks in the UK."
+            },
+            {
+                name: "Windsor Castle",
+                location: [51.4839, -0.6044],
+                description: "The oldest and largest occupied castle in the world, and the official residence of the British monarch. Founded in the 11th century."
+            },
+            {
+                name: "Roman Baths",
+                location: [51.3809, -2.3595],
+                description: "A well-preserved Roman site for public bathing in Bath, England. The complex includes the Great Bath, temple, and museum."
+            },
+            {
+                name: "York Minster",
+                location: [53.9623, -1.0819],
+                description: "One of the largest cathedrals in Northern Europe, with a history dating back to the 7th century. Known for its stunning stained glass windows."
+            },
+            {
+                name: "Canterbury Cathedral",
+                location: [51.2798, 1.0830],
+                description: "The mother church of the Anglican Communion and seat of the Archbishop of Canterbury. A UNESCO World Heritage Site."
+            },
+            {
+                name: "Lake District",
+                location: [54.4609, -3.0886],
+                description: "A mountainous region in North West England, famous for its lakes, forests, and mountains. A UNESCO World Heritage Site."
+            },
+            // Scotland
+            {
+                name: "Edinburgh Castle",
+                location: [55.9486, -3.2008],
+                description: "A historic fortress which dominates the skyline of Edinburgh. Built on Castle Rock, it has been a royal residence and military garrison."
+            },
+            {
+                name: "Loch Ness",
+                location: [57.3229, -4.4244],
+                description: "A large, deep, freshwater loch in the Scottish Highlands, famous for alleged sightings of the Loch Ness Monster."
+            },
+            {
+                name: "Stirling Castle",
+                location: [56.1238, -3.9468],
+                description: "One of Scotland's most important castles, both historically and architecturally. It sits atop Castle Hill, an intrusive crag."
+            },
+            // Wales
+            {
+                name: "Caernarfon Castle",
+                location: [53.1393, -4.2769],
+                description: "A medieval fortress in Gwynedd, built by Edward I during his conquest of Wales. The birthplace of the first English Prince of Wales."
+            },
+            {
+                name: "Snowdonia National Park",
+                location: [53.0685, -4.0763],
+                description: "A national park in northwest Wales, known for its dramatic landscapes, including Snowdon, the highest mountain in Wales."
+            },
+            // Northern Ireland
+            {
+                name: "Giant's Causeway",
+                location: [55.2408, -6.5116],
+                description: "An area of about 40,000 interlocking basalt columns, the result of an ancient volcanic eruption. A UNESCO World Heritage Site."
+            },
+            {
+                name: "Titanic Belfast",
+                location: [54.6083, -5.9097],
+                description: "A visitor attraction and museum in Belfast, Northern Ireland, on the site where the RMS Titanic was built."
+            }
+        ];
 
         // Add markers to the map
         landmarks.forEach(landmark => {
@@ -151,7 +320,7 @@
             });
         });
 
-        // Close panel when clicking outside
+        // Close panel when clicking outside 
         document.addEventListener('click', (e) => {
             if (!landmarkPanel.contains(e.target) && !e.target.closest('.leaflet-marker-icon')) {
                 landmarkPanel.classList.remove('active');
