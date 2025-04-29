@@ -1,0 +1,12 @@
+{
+  "name": "uk-landmarks-map-website",
+  "version": "1.0.0",
+  "description": "Website for mapping UK landmarks and tourist spots",
+  "main": "index.js",
+  "scripts": {
+    "fetch-tourist-spots": "node scripts/fetch_osm_tourist_spots.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
+} 

@@ -1,0 +1,29 @@
+{
+    "categories": [
+        {
+            "category": "Landmarks",
+            "count": 17064,
+            "file": "tourist_spots_landmarks.json"
+        },
+        {
+            "category": "Entertainment",
+            "count": 134,
+            "file": "tourist_spots_entertainment.json"
+        },
+        {
+            "category": "Museums & Galleries",
+            "count": 2302,
+            "file": "tourist_spots_museums_galleries.json"
+        },
+        {
+            "category": "Outdoor Activities",
+            "count": 947,
+            "file": "tourist_spots_outdoor_activities.json"
+        },
+        {
+            "category": "Viewpoints",
+            "count": 1475,
+            "file": "tourist_spots_viewpoints.json"
+        }
+    ]
+}

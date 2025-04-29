@@ -1,0 +1,3057 @@
+{
+    "elements": [
+        {
+            "id": 19777989,
+            "type": "node",
+            "name": "Rutland Falconry & Owl Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.6820752,
+                "lon": -0.6632424
+            },
+            "tags": {
+                "name": "Rutland Falconry & Owl Centre",
+                "tourism": "zoo",
+                "zoo": "falconry"
+            }
+        },
+        {
+            "id": 27465846,
+            "type": "node",
+            "name": "Aquazone at National Aquatic Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.aquazone.ie/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.3970539,
+                "lon": -6.37011
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Aquazone at National Aquatic Centre",
+                "website": "https://www.aquazone.ie/"
+            }
+        },
+        {
+            "id": 31772614,
+            "type": "node",
+            "name": "Mercer's Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.2514602,
+                "lon": -0.1414983
+            },
+            "tags": {
+                "created_by": "JOSM",
+                "leisure": "water_park",
+                "name": "Mercer's Park"
+            }
+        },
+        {
+            "id": 116079047,
+            "type": "node",
+            "name": "Newham Grange Leisure Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://newhamgrangefarm.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.5313796,
+                "lon": -1.2220782
+            },
+            "tags": {
+                "fee": "yes",
+                "name": "Newham Grange Leisure Farm",
+                "tourism": "zoo",
+                "website": "https://newhamgrangefarm.co.uk/",
+                "wikidata": "Q15262150",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 246826137,
+            "type": "node",
+            "name": "Splashdown Quaywest",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Goodrington Sands",
+                "city": "Paignton",
+                "postcode": "TQ4 6LN"
+            },
+            "location": {
+                "lat": 50.4247021,
+                "lon": -3.5610503
+            },
+            "tags": {
+                "addr:city": "Paignton",
+                "addr:postcode": "TQ4 6LN",
+                "addr:street": "Goodrington Sands",
+                "leisure": "water_park",
+                "name": "Splashdown Quaywest",
+                "name:en": "Splashdown Quaywest",
+                "tourism": "attraction",
+                "url": "http://www.splashdownquaywest.co.uk",
+                "wikidata": "Q17021937",
+                "wikipedia": "en:Splashdown Quaywest"
+            }
+        },
+        {
+            "id": 249451347,
+            "type": "node",
+            "name": "Woodside Animal Farm & Leisure PArk",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Mancroft Road",
+                "city": "Luton",
+                "postcode": "LU1 4DG"
+            },
+            "location": {
+                "lat": 51.8492706,
+                "lon": -0.4463831
+            },
+            "tags": {
+                "addr:city": "Luton",
+                "addr:country": "GB",
+                "addr:housename": "Woodside Farm",
+                "addr:postcode": "LU1 4DG",
+                "addr:street": "Mancroft Road",
+                "addr:village": "Aley Green",
+                "fhrs:authority": "Central Bedfordshire",
+                "fhrs:id": "862716",
+                "fhrs:local_authority_id": "159305",
+                "name": "Woodside Animal Farm & Leisure PArk",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 250982419,
+            "type": "node",
+            "name": "Leaplish Waterside Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "http://www.visitkielder.com/visit/leaplish-waterside-park",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 55.1834787,
+                "lon": -2.5349513
+            },
+            "tags": {
+                "addr:city": "Kielder",
+                "addr:postcode": "NE48 1BT",
+                "leisure": "water_park",
+                "name": "Leaplish Waterside Park",
+                "phone": "+44 1434 251000",
+                "website": "http://www.visitkielder.com/visit/leaplish-waterside-park"
+            }
+        },
+        {
+            "id": 259196915,
+            "type": "node",
+            "name": "Oak Farm Animal Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.8177968,
+                "lon": -0.7729805
+            },
+            "tags": {
+                "fixme": "?building?",
+                "name": "Oak Farm Animal Park",
+                "source": "npe",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 282489330,
+            "type": "node",
+            "name": "Allerthorpe Lakeland Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.9034222,
+                "lon": -0.81448
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Allerthorpe Lakeland Park"
+            }
+        },
+        {
+            "id": 290767032,
+            "type": "node",
+            "name": "Wales Ape and Monkey Sanctuary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.7962594,
+                "lon": -3.6901915
+            },
+            "tags": {
+                "attraction": "tourism",
+                "name": "Wales Ape and Monkey Sanctuary",
+                "tourism": "zoo",
+                "wikidata": "Q17032708",
+                "wikipedia": "en:Wales Ape and Monkey Sanctuary"
+            }
+        },
+        {
+            "id": 291971667,
+            "type": "node",
+            "name": "Trilakes Animal Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.3453331,
+                "lon": -0.8132239
+            },
+            "tags": {
+                "name": "Trilakes Animal Park",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 313522167,
+            "type": "node",
+            "name": "Rylstone Gardens Crazy Golf",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.625322,
+                "lon": -1.1760397
+            },
+            "tags": {
+                "leisure": "miniature_golf",
+                "name": "Rylstone Gardens Crazy Golf",
+                "tourism": "attraction"
+            }
+        },
+        {
+            "id": 369036552,
+            "type": "node",
+            "name": "Thorpe Lakes Watersports Resort",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.jbski.com/",
+            "opening_hours": "",
+            "address": {
+                "street": "Thorpe Road",
+                "city": "Chertsey",
+                "postcode": "KT16 8PH"
+            },
+            "location": {
+                "lat": 51.4024561,
+                "lon": -0.5192086
+            },
+            "tags": {
+                "addr:city": "Chertsey",
+                "addr:postcode": "KT16 8PH",
+                "addr:street": "Thorpe Road",
+                "leisure": "water_park",
+                "name": "Thorpe Lakes Watersports Resort",
+                "phone": "+44 1932 579750",
+                "sport": "water_sports;water_ski;swimming",
+                "website": "https://www.jbski.com/"
+            }
+        },
+        {
+            "id": 420376565,
+            "type": "node",
+            "name": "Eco Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.0507661,
+                "lon": -0.7283068
+            },
+            "tags": {
+                "name": "Eco Park",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 442750685,
+            "type": "node",
+            "name": "Dog's Trust Newbury Rehoming Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.3851464,
+                "lon": -1.4077279
+            },
+            "tags": {
+                "name": "Dog's Trust Newbury Rehoming Centre",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 443882074,
+            "type": "node",
+            "name": "Copper Coast Mini Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.1598713,
+                "lon": -7.2377655
+            },
+            "tags": {
+                "name": "Copper Coast Mini Farm",
+                "note": "Children's farm",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 454519031,
+            "type": "node",
+            "name": "Loudoun Castle",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 55.6112928,
+                "lon": -4.3682675
+            },
+            "tags": {
+                "closed": "September 2010",
+                "name": "Loudoun Castle",
+                "tourism": "theme_park",
+                "wikidata": "Q15242976",
+                "wikipedia": "en:Loudoun Castle (theme park)"
+            }
+        },
+        {
+            "id": 586668026,
+            "type": "node",
+            "name": "Kidsplay Activity Land",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Roebuck Way",
+                "city": "Milton Keynes",
+                "postcode": "MK5 8HL"
+            },
+            "location": {
+                "lat": 52.0213052,
+                "lon": -0.770691
+            },
+            "tags": {
+                "addr:city": "Milton Keynes",
+                "addr:country": "GB",
+                "addr:housenumber": "1a",
+                "addr:postcode": "MK5 8HL",
+                "addr:street": "Roebuck Way",
+                "addr:suburb": "Knowlhill",
+                "fhrs:authority": "Milton Keynes",
+                "fhrs:id": "984949",
+                "fhrs:local_authority_id": "88210",
+                "name": "Kidsplay Activity Land",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 586669975,
+            "type": "node",
+            "name": "Gambado",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.021792,
+                "lon": -0.772907
+            },
+            "tags": {
+                "name": "Gambado",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 715694321,
+            "type": "node",
+            "name": "Beaver Water World",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "Closed down",
+            "address": null,
+            "location": {
+                "lat": 51.2891627,
+                "lon": 0.0173499
+            },
+            "tags": {
+                "name": "Beaver Water World",
+                "opening_hours": "Closed down",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 732265584,
+            "type": "node",
+            "name": "Clonfert Pet Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.362115,
+                "lon": -6.674947
+            },
+            "tags": {
+                "name": "Clonfert Pet Farm",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 747304238,
+            "type": "node",
+            "name": "Reptile House",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 55.8287957,
+                "lon": -4.2704009
+            },
+            "tags": {
+                "name": "Reptile House",
+                "tourism": "zoo",
+                "zoo": "reptile"
+            }
+        },
+        {
+            "id": 766872397,
+            "type": "node",
+            "name": "Waterworld",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.2804027,
+                "lon": -10.0254085
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Waterworld"
+            }
+        },
+        {
+            "id": 850601031,
+            "type": "node",
+            "name": "Bournemouth Aviary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "24/7",
+            "address": {
+                "street": "Westover Road",
+                "city": "Bournemouth",
+                "postcode": "BH1 2BU"
+            },
+            "location": {
+                "lat": 50.7187029,
+                "lon": -1.8759707
+            },
+            "tags": {
+                "addr:city": "Bournemouth",
+                "addr:housenumber": "26-29",
+                "addr:postcode": "BH1 2BU",
+                "addr:street": "Westover Road",
+                "fee": "no",
+                "name": "Bournemouth Aviary",
+                "opening_hours": "24/7",
+                "tourism": "zoo",
+                "zoo": "aviary"
+            }
+        },
+        {
+            "id": 851074247,
+            "type": "node",
+            "name": "LC Waterpark",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.thelcswansea.com/",
+            "opening_hours": "",
+            "address": {
+                "street": "Oystermouth Road",
+                "postcode": "SA1 3ST"
+            },
+            "location": {
+                "lat": 51.616752,
+                "lon": -3.9409731
+            },
+            "tags": {
+                "addr:postcode": "SA1 3ST",
+                "addr:street": "Oystermouth Road",
+                "leisure": "water_park",
+                "name": "LC Waterpark",
+                "website": "https://www.thelcswansea.com/"
+            }
+        },
+        {
+            "id": 895663047,
+            "type": "node",
+            "name": "BeWILDerwood",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.bewilderwood.co.uk/",
+            "opening_hours": "",
+            "address": {
+                "street": "Horning Road",
+                "city": "Hoveton",
+                "postcode": "NR12 8JW"
+            },
+            "location": {
+                "lat": 52.710938,
+                "lon": 1.4503087
+            },
+            "tags": {
+                "addr:city": "Hoveton",
+                "addr:country": "GB",
+                "addr:postcode": "NR12 8JW",
+                "addr:street": "Horning Road",
+                "email": "explore@BeWILDerwood.co.uk",
+                "name": "BeWILDerwood",
+                "phone": "+44 1692 633033",
+                "tourism": "theme_park",
+                "website": "https://www.bewilderwood.co.uk/",
+                "wikidata": "Q4899748"
+            }
+        },
+        {
+            "id": 1244393487,
+            "type": "node",
+            "name": "Amusement Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.434308,
+                "lon": -4.0794058
+            },
+            "tags": {
+                "name": "Amusement Park",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 1311957110,
+            "type": "node",
+            "name": "Roarr! Dinosaur Adventure",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.roarrdinosauradventure.co.uk/",
+            "opening_hours": "Mar 29-Jul 18, Sep 8-Oct 23 09:30-17:00; Jul 19-Sep 7 09:30-18:00; Oct 24-Dec 31 09:30-16:00",
+            "address": null,
+            "location": {
+                "lat": 52.7126815,
+                "lon": 1.1200744
+            },
+            "tags": {
+                "addr:city": "Norwich",
+                "addr:country": "GB",
+                "addr:place": "Weston Park",
+                "addr:postcode": "NR9 5JE",
+                "addr:village": "Lenwade",
+                "dog": "guide_only",
+                "fax": "+44 1603 876315",
+                "fee:conditional": "no @ (height < 0.9)",
+                "name": "Roarr! Dinosaur Adventure",
+                "opening_hours": "Mar 29-Jul 18, Sep 8-Oct 23 09:30-17:00; Jul 19-Sep 7 09:30-18:00; Oct 24-Dec 31 09:30-16:00",
+                "phone": "+44 1603 876310",
+                "source": "bing",
+                "tourism": "theme_park",
+                "website": "https://www.roarrdinosauradventure.co.uk/",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "id": 1328454956,
+            "type": "node",
+            "name": "Bamboo Park Glengariff",
+            "category": "Entertainment",
+            "description": "",
+            "website": "http://bamboo-park.com",
+            "opening_hours": "09:15-19:00",
+            "address": null,
+            "location": {
+                "lat": 51.7518072,
+                "lon": -9.5357821
+            },
+            "tags": {
+                "addr:city": "Glengariff",
+                "email": "bambooparkltd@eircom.net",
+                "name": "Bamboo Park Glengariff",
+                "opening_hours": "09:15-19:00",
+                "phone": "+353 27 63007",
+                "tourism": "theme_park",
+                "website": "http://bamboo-park.com",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "id": 1333615707,
+            "type": "node",
+            "name": "Old Macdonald Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.omdfarm.co.uk/",
+            "opening_hours": "Apr 1 - Sep 30: 10:00- 17:00; Oct 1 - Mar 31: Mo-Su 10:00-16:00",
+            "address": {
+                "street": "Weald Road"
+            },
+            "location": {
+                "lat": 51.6258833,
+                "lon": 0.2375653
+            },
+            "tags": {
+                "addr:housenumber": "Old MacDonald's Farm",
+                "addr:street": "Weald Road",
+                "name": "Old Macdonald Farm",
+                "opening_hours": "Apr 1 - Sep 30: 10:00- 17:00; Oct 1 - Mar 31: Mo-Su 10:00-16:00",
+                "tourism": "zoo",
+                "website": "https://www.omdfarm.co.uk/"
+            }
+        },
+        {
+            "id": 1363122636,
+            "type": "node",
+            "name": "Wicksteed Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.3834744,
+                "lon": -0.7090768
+            },
+            "tags": {
+                "name": "Wicksteed Park",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 1474365413,
+            "type": "node",
+            "name": "The Butterfly and Wildlife Parh",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.7911257,
+                "lon": 0.1295147
+            },
+            "tags": {
+                "name": "The Butterfly and Wildlife Parh",
+                "source": "http://www.butterflyandwildlifepark.co.uk/",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 1594735986,
+            "type": "node",
+            "name": "Mizen's Railway",
+            "category": "Entertainment",
+            "description": "",
+            "website": "www.wmrs.co.uk",
+            "opening_hours": "summer: Su 14:00-17:00 || \"special events\"",
+            "address": {
+                "street": "Barrs Lane",
+                "city": "Woking",
+                "postcode": "GU21 2JN"
+            },
+            "location": {
+                "lat": 51.3266882,
+                "lon": -0.6127668
+            },
+            "tags": {
+                "addr:city": "Woking",
+                "addr:postcode": "GU21 2JN",
+                "addr:street": "Barrs Lane",
+                "name": "Mizen's Railway",
+                "opening_hours": "summer: Su 14:00-17:00 || \"special events\"",
+                "operator": "Woking Miniature Railway Society",
+                "tourism": "theme_park",
+                "website": "www.wmrs.co.uk"
+            }
+        },
+        {
+            "id": 1739117028,
+            "type": "node",
+            "name": "Symonds Yat Canoe Hire, Symonds Yat West",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.8533299,
+                "lon": -2.6459777
+            },
+            "tags": {
+                "designation": "Symonds Yat Canoe Hire, Symonds Yat West",
+                "name": "Symonds Yat Canoe Hire, Symonds Yat West",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 1851721197,
+            "type": "node",
+            "name": "Subtropical Swimming Paradise",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.3931927,
+                "lon": 0.6435335
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Subtropical Swimming Paradise"
+            }
+        },
+        {
+            "id": 1869354418,
+            "type": "node",
+            "name": "Amelia Trust Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.439905,
+                "lon": -3.3359974
+            },
+            "tags": {
+                "name": "Amelia Trust Farm",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 1869355120,
+            "type": "node",
+            "name": "Welsh Hawking Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.4151005,
+                "lon": -3.3078449
+            },
+            "tags": {
+                "name": "Welsh Hawking Centre",
+                "tourism": "zoo",
+                "wikidata": "Q7981913",
+                "wikipedia": "en:Welsh Hawking Centre"
+            }
+        },
+        {
+            "id": 1883475054,
+            "type": "node",
+            "name": "Funfair",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.4400377,
+                "lon": -3.0408951
+            },
+            "tags": {
+                "name": "Funfair",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 2101245203,
+            "type": "node",
+            "name": "Whitehouse Farm Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 55.1305257,
+                "lon": -1.7011356
+            },
+            "tags": {
+                "name": "Whitehouse Farm Centre",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 2116376228,
+            "type": "node",
+            "name": "Funland Hayling Island",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://funland.info/",
+            "opening_hours": "",
+            "address": {
+                "street": "Sea Front",
+                "city": "Hayling Island",
+                "postcode": "PO11 0AG"
+            },
+            "location": {
+                "lat": 50.7851541,
+                "lon": -0.987796
+            },
+            "tags": {
+                "addr:city": "Hayling Island",
+                "addr:postcode": "PO11 0AG",
+                "addr:street": "Sea Front",
+                "email": "office@funland.info",
+                "name": "Funland Hayling Island",
+                "phone": "+44 23 9246 2820",
+                "tourism": "theme_park",
+                "website": "https://funland.info/",
+                "wheelchair": "yes",
+                "wikidata": "Q23926547",
+                "wikipedia": "en:Funland Hayling Island"
+            }
+        },
+        {
+            "id": 2121504125,
+            "type": "node",
+            "name": "Spingfields Fun Park and Pony Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "http://www.springfieldsponycentre.co.uk",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.4137515,
+                "lon": -4.9279905
+            },
+            "tags": {
+                "name": "Spingfields Fun Park and Pony Centre",
+                "tourism": "theme_park",
+                "website": "http://www.springfieldsponycentre.co.uk"
+            }
+        },
+        {
+            "id": 2200713986,
+            "type": "node",
+            "name": "Peppa Pig World",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.9492349,
+                "lon": -1.5491327
+            },
+            "tags": {
+                "name": "Peppa Pig World",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 2246006836,
+            "type": "node",
+            "name": "Smithills Open Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Smithills Dean Road",
+                "city": "Bolton",
+                "postcode": "BL1 7NS"
+            },
+            "location": {
+                "lat": 53.6044618,
+                "lon": -2.4513993
+            },
+            "tags": {
+                "addr:city": "Bolton",
+                "addr:postcode": "BL1 7NS",
+                "addr:street": "Smithills Dean Road",
+                "addr:suburb": "Smithills",
+                "name": "Smithills Open Farm",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 2280189152,
+            "type": "node",
+            "name": "Pet Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.4887577,
+                "lon": -6.3799516
+            },
+            "tags": {
+                "name": "Pet Farm",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 2376360336,
+            "type": "node",
+            "name": "Cowdray Model Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.9939982,
+                "lon": -0.7243149
+            },
+            "tags": {
+                "name": "Cowdray Model Farm",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 2428639662,
+            "type": "node",
+            "name": "Screech Owl Sanctuary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.4061693,
+                "lon": -4.9041689
+            },
+            "tags": {
+                "name": "Screech Owl Sanctuary",
+                "tourism": "zoo",
+                "wikidata": "Q7438968",
+                "wikipedia": "en:Screech Owl Sanctuary"
+            }
+        },
+        {
+            "id": 2478967737,
+            "type": "node",
+            "name": "The Tamar Valley Donkey Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.5140782,
+                "lon": -4.2435651
+            },
+            "tags": {
+                "name": "The Tamar Valley Donkey Park",
+                "tourism": "zoo",
+                "zoo": "farm_park"
+            }
+        },
+        {
+            "id": 2844541523,
+            "type": "node",
+            "name": "Brean Down Bird Garden",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.3228594,
+                "lon": -3.0107617
+            },
+            "tags": {
+                "name": "Brean Down Bird Garden",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 3016931292,
+            "type": "node",
+            "name": "Galloway Wildlife Conservation Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "http://gallowaywildlife.org.uk",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.8404896,
+                "lon": -4.0353871
+            },
+            "tags": {
+                "name": "Galloway Wildlife Conservation Park",
+                "tourism": "zoo",
+                "website": "http://gallowaywildlife.org.uk"
+            }
+        },
+        {
+            "id": 3061337537,
+            "type": "node",
+            "name": "Shaldon Zoo (Shaldon Wildlife Trust)",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.5366849,
+                "lon": -3.4988344
+            },
+            "tags": {
+                "name": "Shaldon Zoo (Shaldon Wildlife Trust)",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 3397886782,
+            "type": "node",
+            "name": "Novelty Automation",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://novelty-automation.com/",
+            "opening_hours": "Tu,We,Fr,Sa 11:00-18:00; Th 12:00-20:00; Su 12:00-18:00",
+            "address": {
+                "street": "Princeton Street",
+                "city": "London",
+                "postcode": "WC1R 4AX"
+            },
+            "location": {
+                "lat": 51.5197601,
+                "lon": -0.1165252
+            },
+            "tags": {
+                "addr:city": "London",
+                "addr:housenumber": "1a",
+                "addr:postcode": "WC1R 4AX",
+                "addr:street": "Princeton Street",
+                "leisure": "amusement_arcade",
+                "name": "Novelty Automation",
+                "opening_hours": "Tu,We,Fr,Sa 11:00-18:00; Th 12:00-20:00; Su 12:00-18:00",
+                "operator": "Tim Hunkin",
+                "tourism": "attraction",
+                "website": "https://novelty-automation.com/",
+                "wikidata": "Q55098971",
+                "wikipedia": "en:Novelty Automation"
+            }
+        },
+        {
+            "id": 3417564961,
+            "type": "node",
+            "name": "Animal Education centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "Mo-Su 10:30-17:45",
+            "address": {
+                "street": "Holderness Road",
+                "city": "Kingston upon Hull"
+            },
+            "location": {
+                "lat": 53.7658404,
+                "lon": -0.298459
+            },
+            "tags": {
+                "addr:city": "Kingston upon Hull",
+                "addr:street": "Holderness Road",
+                "fee": "no",
+                "name": "Animal Education centre",
+                "opening_hours": "Mo-Su 10:30-17:45",
+                "operator": "Hull City Council",
+                "tourism": "zoo",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "id": 3525938237,
+            "type": "node",
+            "name": "Playbarn",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.theplaybarn.co.uk/",
+            "opening_hours": "Tu-Su 09:30-16:00; Mo off; SH Mo-Fr 09:30-16:00",
+            "address": null,
+            "location": {
+                "lat": 52.561088,
+                "lon": 1.3374725
+            },
+            "tags": {
+                "addr:city": "Poringland",
+                "addr:postcode": "NR14 7LP",
+                "check_date:opening_hours": "2024-06-21",
+                "fee": "yes",
+                "name": "Playbarn",
+                "opening_hours": "Tu-Su 09:30-16:00; Mo off; SH Mo-Fr 09:30-16:00",
+                "source": "Survey",
+                "tourism": "theme_park",
+                "website": "https://www.theplaybarn.co.uk/"
+            }
+        },
+        {
+            "id": 3750129300,
+            "type": "node",
+            "name": "Natureland Seal Sanctuary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.skegnessnatureland.co.uk/",
+            "opening_hours": "10:00-17:00",
+            "address": {
+                "street": "North Parade",
+                "city": "Skegness",
+                "postcode": "PE25 1DB"
+            },
+            "location": {
+                "lat": 53.1484676,
+                "lon": 0.346382
+            },
+            "tags": {
+                "addr:city": "Skegness",
+                "addr:housename": "Skegness Natureland Seal Sanctuary",
+                "addr:postcode": "PE25 1DB",
+                "addr:street": "North Parade",
+                "alt_name": "Seal Sanctuary",
+                "alt_name1": "Natureland",
+                "name": "Natureland Seal Sanctuary",
+                "opening_hours": "10:00-17:00",
+                "phone": "+44 1754 764 345",
+                "tourism": "zoo",
+                "website": "https://www.skegnessnatureland.co.uk/",
+                "wikidata": "Q6980986"
+            }
+        },
+        {
+            "id": 4143187380,
+            "type": "node",
+            "name": "Fishers Farm Park",
+            "category": "Entertainment",
+            "description": "farm park, restaurant, animal exhibits, petting areas, play areas for children. entrance fee applies to main area but free entry to cafe.",
+            "website": "https://fishersfarmpark.co.uk/",
+            "opening_hours": "Mo-Su 10:00-17:00",
+            "address": {
+                "street": "wisborough green"
+            },
+            "location": {
+                "lat": 51.0305685,
+                "lon": -0.4919451
+            },
+            "tags": {
+                "addr:street": "wisborough green",
+                "description": "farm park, restaurant, animal exhibits, petting areas, play areas for children. entrance fee applies to main area but free entry to cafe.",
+                "name": "Fishers Farm Park",
+                "opening_hours": "Mo-Su 10:00-17:00",
+                "phone": "+44 1403700063",
+                "tourism": "zoo",
+                "website": "https://fishersfarmpark.co.uk/",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 4161416190,
+            "type": "node",
+            "name": "Red Mountain Open Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://redmountainopenfarm.ie/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.6751604,
+                "lon": -6.461576
+            },
+            "tags": {
+                "name": "Red Mountain Open Farm",
+                "tourism": "theme_park",
+                "website": "https://redmountainopenfarm.ie/"
+            }
+        },
+        {
+            "id": 4213593185,
+            "type": "node",
+            "name": "Amazu",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.3495078,
+                "lon": -0.3166278
+            },
+            "tags": {
+                "name": "Amazu",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 4270100319,
+            "type": "node",
+            "name": "Si5 Spy Missions",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Snowdon Drive",
+                "city": "Milton Keynes",
+                "postcode": "MK6 1BU"
+            },
+            "location": {
+                "lat": 52.02783,
+                "lon": -0.76455
+            },
+            "tags": {
+                "addr:city": "Milton Keynes",
+                "addr:country": "GB",
+                "addr:postcode": "MK6 1BU",
+                "addr:street": "Snowdon Drive",
+                "addr:suburb": "Winterhill",
+                "fhrs:authority": "Milton Keynes",
+                "fhrs:id": "120110",
+                "fhrs:local_authority_id": "49147",
+                "name": "Si5 Spy Missions",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4324851538,
+            "type": "node",
+            "name": "Aviary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.5927205,
+                "lon": -0.3864747
+            },
+            "tags": {
+                "name": "Aviary",
+                "tourism": "zoo",
+                "wheelchair": "yes",
+                "zoo": "aviary"
+            }
+        },
+        {
+            "id": 4499021388,
+            "type": "node",
+            "name": "Mansell Raceway",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.8685672,
+                "lon": -3.2346009
+            },
+            "tags": {
+                "name": "Mansell Raceway",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4595202652,
+            "type": "node",
+            "name": "Kids Play Ltd",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Thurston Drive",
+                "city": "Kettering",
+                "postcode": "NN15 6PB"
+            },
+            "location": {
+                "lat": 52.3876947,
+                "lon": -0.7349962
+            },
+            "tags": {
+                "addr:city": "Kettering",
+                "addr:country": "GB",
+                "addr:postcode": "NN15 6PB",
+                "addr:street": "Thurston Drive",
+                "name": "Kids Play Ltd",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4623329926,
+            "type": "node",
+            "name": "Funtastic Play",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.7683068,
+                "lon": -3.0172062
+            },
+            "tags": {
+                "addr:city": "Lytham St Annes",
+                "addr:postcode": "FY8 3DP",
+                "addr:suburb": "St Annes",
+                "fhrs:id": "123548",
+                "name": "Funtastic Play",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4657891552,
+            "type": "node",
+            "name": "Malden and District Society of Model Engineers Ltd",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Willowbank",
+                "city": "Thames Ditton",
+                "postcode": "KT7 0LE"
+            },
+            "location": {
+                "lat": 51.383343,
+                "lon": -0.331985
+            },
+            "tags": {
+                "addr:city": "Thames Ditton",
+                "addr:postcode": "KT7 0LE",
+                "addr:street": "Willowbank",
+                "contact:website": "http://malden-dsme.co.uk",
+                "name": "Malden and District Society of Model Engineers Ltd",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4668350105,
+            "type": "node",
+            "name": "Waterworld",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "closed",
+            "address": null,
+            "location": {
+                "lat": 55.2077591,
+                "lon": -6.6584034
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Waterworld",
+                "opening_hours": "closed"
+            }
+        },
+        {
+            "id": 4879537705,
+            "type": "node",
+            "name": "Climbing Frame",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.3390985,
+                "lon": -2.2851015
+            },
+            "tags": {
+                "name": "Climbing Frame",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 4880370421,
+            "type": "node",
+            "name": "La Colline Aux Animaux",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Rue de Belle",
+                "postcode": "62720"
+            },
+            "location": {
+                "lat": 50.763993,
+                "lon": 1.7515287
+            },
+            "tags": {
+                "addr:postcode": "62720",
+                "addr:street": "Rue de Belle",
+                "charge": "4 EUR",
+                "contact:website": "https://www.facebook.com/LaCollineauxAnimaux",
+                "fee": "yes",
+                "name": "La Colline Aux Animaux",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 4957673324,
+            "type": "node",
+            "name": "The Monkey Sanctuary",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.monkeysanctuary.org/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.3654006,
+                "lon": -4.4139301
+            },
+            "tags": {
+                "name": "The Monkey Sanctuary",
+                "tourism": "zoo",
+                "website": "https://www.monkeysanctuary.org/",
+                "wikidata": "Q6900809"
+            }
+        },
+        {
+            "id": 5098343898,
+            "type": "node",
+            "name": "Knox Wood Wildlife Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "www.knoxwood.org",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.8517577,
+                "lon": -3.0999222
+            },
+            "tags": {
+                "addr:city": "Thornby Moor, Wigton",
+                "addr:postcode": "CA7 0LA",
+                "name": "Knox Wood Wildlife Centre",
+                "phone": "+44 16973 43812",
+                "tourism": "zoo",
+                "website": "www.knoxwood.org"
+            }
+        },
+        {
+            "id": 5162864503,
+            "type": "node",
+            "name": "Animals",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.6789973,
+                "lon": -1.4703749
+            },
+            "tags": {
+                "name": "Animals",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 5162864510,
+            "type": "node",
+            "name": "The Farmyard Barn",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.6797264,
+                "lon": -1.4700383
+            },
+            "tags": {
+                "name": "The Farmyard Barn",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 5196661089,
+            "type": "node",
+            "name": "Boost Trampoline Parks",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Fairground Way",
+                "city": "Northampton",
+                "postcode": "NN3 9HU"
+            },
+            "location": {
+                "lat": 52.2404711,
+                "lon": -0.8397514
+            },
+            "tags": {
+                "addr:city": "Northampton",
+                "addr:country": "GB",
+                "addr:postcode": "NN3 9HU",
+                "addr:street": "Fairground Way",
+                "fhrs:authority": "West Northamptonshire",
+                "fhrs:id": "949055",
+                "fhrs:local_authority_id": "PI/000087750",
+                "leisure": "trampoline_park",
+                "name": "Boost Trampoline Parks",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 5358331600,
+            "type": "node",
+            "name": "Heaton Park Animal Centre",
+            "category": "Entertainment",
+            "description": "The Animal Centre stands on the site of the 19th century glasshouse range that was demolished in the late 20th century. Animals and birds are on display here all year round.",
+            "website": "",
+            "opening_hours": "Mo-Su 10:00-16:00",
+            "address": null,
+            "location": {
+                "lat": 53.5364959,
+                "lon": -2.2562848
+            },
+            "tags": {
+                "description": "The Animal Centre stands on the site of the 19th century glasshouse range that was demolished in the late 20th century. Animals and birds are on display here all year round.",
+                "name": "Heaton Park Animal Centre",
+                "opening_hours": "Mo-Su 10:00-16:00",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 5396239082,
+            "type": "node",
+            "name": "New Forest Water Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://newforestwaterpark.co.uk/",
+            "opening_hours": "",
+            "address": {
+                "street": "Ringwood Road",
+                "postcode": "SP6 2EY"
+            },
+            "location": {
+                "lat": 50.8997333,
+                "lon": -1.7824336
+            },
+            "tags": {
+                "addr:housename": "Hucklesbrook Lakes",
+                "addr:postcode": "SP6 2EY",
+                "addr:street": "Ringwood Road",
+                "is_in": "Hampshire",
+                "leisure": "water_park",
+                "name": "New Forest Water Park",
+                "phone": "+44 1425 656 868",
+                "website": "https://newforestwaterpark.co.uk/"
+            }
+        },
+        {
+            "id": 5648372447,
+            "type": "node",
+            "name": "Kernow Adventure Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.1605648,
+                "lon": -5.1687428
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Kernow Adventure Park",
+                "sport": "swimming;water_ski"
+            }
+        },
+        {
+            "id": 5714232186,
+            "type": "node",
+            "name": "Wakeboarding track",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.foxlakedundee.co.uk/info/gettinghere/",
+            "opening_hours": "",
+            "address": {
+                "street": "West Victoria Dock Road",
+                "city": "Dundee",
+                "postcode": "DD1 3JP"
+            },
+            "location": {
+                "lat": 56.4609788,
+                "lon": -2.9624149
+            },
+            "tags": {
+                "addr:city": "Dundee",
+                "addr:country": "GB",
+                "addr:postcode": "DD1 3JP",
+                "addr:street": "West Victoria Dock Road",
+                "leisure": "water_park",
+                "name": "Wakeboarding track",
+                "operator": "Foxlake Dundee",
+                "website": "https://www.foxlakedundee.co.uk/info/gettinghere/"
+            }
+        },
+        {
+            "id": 5909497234,
+            "type": "node",
+            "name": "Argyll Adventure",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 56.2063549,
+                "lon": -5.1005691
+            },
+            "tags": {
+                "contact:email": "info@argylladventure.com",
+                "contact:phone": "+44 1499 302611",
+                "contact:website": "https://www.argylladventure.com/",
+                "name": "Argyll Adventure",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 6013223423,
+            "type": "node",
+            "name": "Imperial Birds of Prey Academy",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.imperialbirdofpreyacademy.com/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.6010527,
+                "lon": 0.4473896
+            },
+            "tags": {
+                "name": "Imperial Birds of Prey Academy",
+                "tourism": "zoo",
+                "website": "https://www.imperialbirdofpreyacademy.com/"
+            }
+        },
+        {
+            "id": 6058642405,
+            "type": "node",
+            "name": "LEGOLAND Discovery Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "King Edwards Road",
+                "city": "Birmingham",
+                "postcode": "B1 2AA"
+            },
+            "location": {
+                "lat": 52.4790946,
+                "lon": -1.9151257
+            },
+            "tags": {
+                "addr:city": "Birmingham",
+                "addr:postcode": "B1 2AA",
+                "addr:street": "King Edwards Road",
+                "brand": "LEGOLAND Discovery Centre",
+                "brand:wikidata": "Q303439",
+                "contact:facebook": "https://www.facebook.com/LDCBham",
+                "contact:twitter": "LDCBirmingham",
+                "contact:website": "https://www.legolanddiscoverycentre.com/birmingham/",
+                "fhrs:id": "1094274",
+                "name": "LEGOLAND Discovery Centre",
+                "operator": "Merlin Entertainments",
+                "operator:wikidata": "Q573278",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 6090716442,
+            "type": "node",
+            "name": "Odds Farm Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.oddsfarm.co.uk/",
+            "opening_hours": "Mo-Su 10:00-17:30; Dec 25-26 off; Jan 01 off",
+            "address": null,
+            "location": {
+                "lat": 51.5800965,
+                "lon": -0.6657042
+            },
+            "tags": {
+                "addr:hamlet": "Woodburn Common",
+                "addr:postcode": "HP10 0LX",
+                "check_date:opening_hours": "2024-05-03",
+                "fee": "yes",
+                "fee:conditional": "no @ age < 2",
+                "fhrs:id": "776930",
+                "name": "Odds Farm Park",
+                "opening_hours": "Mo-Su 10:00-17:30; Dec 25-26 off; Jan 01 off",
+                "tourism": "theme_park",
+                "website": "https://www.oddsfarm.co.uk/",
+                "wheelchair": "limited"
+            }
+        },
+        {
+            "id": 6515395869,
+            "type": "node",
+            "name": "Go Ape - Treetop Adventure",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://goape.co.uk/locations/temple-newsam",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.7876818,
+                "lon": -1.4534245
+            },
+            "tags": {
+                "access": "customers",
+                "brand": "Go Ape",
+                "brand:website": "https://goape.co.uk/",
+                "brand:wikidata": "Q5574692",
+                "brand:wikipedia": "en:Go Ape",
+                "fee": "yes",
+                "name": "Go Ape - Treetop Adventure",
+                "operator": "Go Ape",
+                "playground": "structure",
+                "tourism": "theme_park",
+                "website": "https://goape.co.uk/locations/temple-newsam"
+            }
+        },
+        {
+            "id": 6764421834,
+            "type": "node",
+            "name": "Coppett Hill Butterfly Site",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.8623626,
+                "lon": -2.6179558
+            },
+            "tags": {
+                "name": "Coppett Hill Butterfly Site",
+                "source": "Unresolved note #1083072",
+                "tourism": "zoo",
+                "zoo": "butterfly"
+            }
+        },
+        {
+            "id": 6973763808,
+            "type": "node",
+            "name": "H2O Rampage Aqua Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.h2orampage.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.8250928,
+                "lon": -0.0629754
+            },
+            "tags": {
+                "addr:city": "Ware, Hertfordshire",
+                "addr:country": "GB",
+                "addr:housename": "Three Lakes, Westmill Farm",
+                "addr:postcode": "SG12 0ES",
+                "email": "office.h2o.rampage@gmail.com",
+                "leisure": "water_park",
+                "name": "H2O Rampage Aqua Park",
+                "payment:cards": "yes",
+                "payment:cash": "yes",
+                "payment:coins": "yes",
+                "phone": "+447367096825",
+                "website": "https://www.h2orampage.co.uk/"
+            }
+        },
+        {
+            "id": 7553550789,
+            "type": "node",
+            "name": "Mini Monsters",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Long Row",
+                "city": "Oakham",
+                "postcode": "LE15 6LN"
+            },
+            "location": {
+                "lat": 52.6695626,
+                "lon": -0.7349575
+            },
+            "tags": {
+                "addr:city": "Oakham",
+                "addr:country": "GB",
+                "addr:postcode": "LE15 6LN",
+                "addr:street": "Long Row",
+                "addr:unit": "Units 1 And 2 Long Row Business Park",
+                "fhrs:authority": "Rutland",
+                "fhrs:id": "1153842",
+                "fhrs:local_authority_id": "104616",
+                "name": "Mini Monsters",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 7627120535,
+            "type": "node",
+            "name": "Mini Mischiefs",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Rockingham Road",
+                "city": "Market Harborough",
+                "postcode": "LE16 7BA"
+            },
+            "location": {
+                "lat": 52.4800751,
+                "lon": -0.9034807
+            },
+            "tags": {
+                "addr:city": "Market Harborough",
+                "addr:country": "GB",
+                "addr:housename": "Three Manors Retail Park",
+                "addr:postcode": "LE16 7BA",
+                "addr:street": "Rockingham Road",
+                "addr:unit": "Unit 6",
+                "fhrs:authority": "Harborough",
+                "fhrs:id": "579641",
+                "fhrs:local_authority_id": "13/00065/FOODHS",
+                "name": "Mini Mischiefs",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 7734349472,
+            "type": "node",
+            "name": "Tornado Springs",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.9488297,
+                "lon": -1.550945
+            },
+            "tags": {
+                "name": "Tornado Springs",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 7734478626,
+            "type": "node",
+            "name": "Lost Kingdom",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.9482664,
+                "lon": -1.5555155
+            },
+            "tags": {
+                "name": "Lost Kingdom",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 7734478627,
+            "type": "node",
+            "name": "Critter Creek",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 50.9499438,
+                "lon": -1.5519777
+            },
+            "tags": {
+                "name": "Critter Creek",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 7734599493,
+            "type": "node",
+            "name": "Bywyd Gwyllt Glaslyn Wildlife",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "Mo-Su 10:00-17:00",
+            "address": null,
+            "location": {
+                "lat": 52.9504527,
+                "lon": -4.0956136
+            },
+            "tags": {
+                "fee": "no",
+                "name": "Bywyd Gwyllt Glaslyn Wildlife",
+                "note": "Primarily a visitor centre for Osprey viewing. Open only during the summer months.",
+                "opening_hours": "Mo-Su 10:00-17:00",
+                "opening_hours:covid19": "closed",
+                "operator": "Bywyd Gwyllt Glaslyn Wildlife CIC",
+                "tourism": "zoo",
+                "zoo": "wildlife_park"
+            }
+        },
+        {
+            "id": 7740083000,
+            "type": "node",
+            "name": "The Lakes Aqua Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.thelakesaquapark.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.1968114,
+                "lon": -3.2783335
+            },
+            "tags": {
+                "addr:city": "Haverigg",
+                "addr:place": "Port Haverigg",
+                "leisure": "water_park",
+                "name": "The Lakes Aqua Park",
+                "website": "https://www.thelakesaquapark.co.uk/"
+            }
+        },
+        {
+            "id": 7862727651,
+            "type": "node",
+            "name": "Wet n Wild Oxford",
+            "category": "Entertainment",
+            "description": "Aqua park with kayaking, pedalos, water skiing, lake swimming... Has café.",
+            "website": "https://www.oxfordwetnwild.com/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.6545437,
+                "lon": -1.1622767
+            },
+            "tags": {
+                "description": "Aqua park with kayaking, pedalos, water skiing, lake swimming... Has café.",
+                "leisure": "water_park",
+                "name": "Wet n Wild Oxford",
+                "phone": "+441865 341418",
+                "website": "https://www.oxfordwetnwild.com/"
+            }
+        },
+        {
+            "id": 8009970990,
+            "type": "node",
+            "name": "Watatunga Wildlife Reserve (Entrance)",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.6821087,
+                "lon": 0.4194871
+            },
+            "tags": {
+                "name": "Watatunga Wildlife Reserve (Entrance)",
+                "tourism": "zoo",
+                "zoo": "wildlife_park"
+            }
+        },
+        {
+            "id": 8016085274,
+            "type": "node",
+            "name": "Walby Farm Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.walbyfarmpark.co.uk/",
+            "opening_hours": "PH,Mo-Su 10:00-17:30; Dec 25-26 off; Jan 01 off",
+            "address": null,
+            "location": {
+                "lat": 54.9352935,
+                "lon": -2.8764431
+            },
+            "tags": {
+                "addr:postcode": "CA6 4QL",
+                "check_date:opening_hours": "2024-06-03",
+                "fee": "yes",
+                "name": "Walby Farm Park",
+                "opening_hours": "PH,Mo-Su 10:00-17:30; Dec 25-26 off; Jan 01 off",
+                "tourism": "theme_park",
+                "website": "https://www.walbyfarmpark.co.uk/"
+            }
+        },
+        {
+            "id": 8180190929,
+            "type": "node",
+            "name": "National Reptile Zoo",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.6556602,
+                "lon": -7.2312524
+            },
+            "tags": {
+                "name": "National Reptile Zoo",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 8715735295,
+            "type": "node",
+            "name": "Yorkshire Wildlife Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.4952873,
+                "lon": -1.0212037
+            },
+            "tags": {
+                "name": "Yorkshire Wildlife Park",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 8820774372,
+            "type": "node",
+            "name": "Aqua Splash Redricks Lakes",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://aqua-splash.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.7901114,
+                "lon": 0.1170808
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Aqua Splash Redricks Lakes",
+                "website": "https://aqua-splash.co.uk/"
+            }
+        },
+        {
+            "id": 8870076127,
+            "type": "node",
+            "name": "Harbour Splash",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://harboursplash.ie/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.2969816,
+                "lon": -6.14342
+            },
+            "tags": {
+                "contact:facebook": "https://www.facebook.com/harboursplash/",
+                "email": "info@harboursplash.ie",
+                "leisure": "water_park",
+                "name": "Harbour Splash",
+                "opening_hours:covid19": "off",
+                "operator": "Big Splash Water Parks Ltd",
+                "phone": "+353-1-524-0602",
+                "website": "https://harboursplash.ie/",
+                "wheelchair": "no"
+            }
+        },
+        {
+            "id": 8912396962,
+            "type": "node",
+            "name": "Play Factory Louth",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Bolingbroke Road",
+                "city": "Louth",
+                "postcode": "LN11 0WA"
+            },
+            "location": {
+                "lat": 53.3826772,
+                "lon": -0.0106698
+            },
+            "tags": {
+                "addr:city": "Louth",
+                "addr:country": "GB",
+                "addr:postcode": "LN11 0WA",
+                "addr:street": "Bolingbroke Road",
+                "addr:unit": "Unit 1 To 2",
+                "fhrs:authority": "East Lindsey",
+                "fhrs:id": "693782",
+                "fhrs:local_authority_id": "EHFDI/06494/14",
+                "name": "Play Factory Louth",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 8918355956,
+            "type": "node",
+            "name": "Splash Valley Aqua Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.hiddenvalley.ie/splashvalley/",
+            "opening_hours": "",
+            "address": {
+                "street": "Moneystown Road",
+                "city": "Rathdrum",
+                "postcode": "A67 CX62"
+            },
+            "location": {
+                "lat": 52.9406223,
+                "lon": -6.227676
+            },
+            "tags": {
+                "access": "customers",
+                "addr:city": "Rathdrum",
+                "addr:postcode": "A67 CX62",
+                "addr:street": "Moneystown Road",
+                "contact:facebook": "https://www.facebook.com/hiddenvalleyholidaypark",
+                "contact:instagram": "https://www.instagram.com/hiddenvalleyholidaypark/",
+                "email": "info@irelandholidaypark.com",
+                "leisure": "water_park",
+                "name": "Splash Valley Aqua Park",
+                "operator": "Hidden Valley",
+                "phone": "+353-86-7272872",
+                "website": "https://www.hiddenvalley.ie/splashvalley/"
+            }
+        },
+        {
+            "id": 8994373770,
+            "type": "node",
+            "name": "Sky Park Outdoor Adventures",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://skypark.ie",
+            "opening_hours": "",
+            "address": {
+                "street": "Dundalk Road",
+                "city": "Carlingford"
+            },
+            "location": {
+                "lat": 54.0271179,
+                "lon": -6.1785601
+            },
+            "tags": {
+                "addr:city": "Carlingford",
+                "addr:street": "Dundalk Road",
+                "name": "Sky Park Outdoor Adventures",
+                "phone": "+353 42 9373100",
+                "postal_code": "A91 TK71",
+                "tourism": "theme_park",
+                "website": "https://skypark.ie"
+            }
+        },
+        {
+            "id": 9046312780,
+            "type": "node",
+            "name": "Jump Warriors",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Anchor Lane",
+                "city": "Skegness",
+                "postcode": "PE25 1LY"
+            },
+            "location": {
+                "lat": 53.1995708,
+                "lon": 0.3315237
+            },
+            "tags": {
+                "addr:city": "Skegness",
+                "addr:country": "GB",
+                "addr:postcode": "PE25 1LY",
+                "addr:street": "Anchor Lane",
+                "addr:village": "Ingoldmells",
+                "fhrs:authority": "East Lindsey",
+                "fhrs:id": "1071912",
+                "fhrs:local_authority_id": "EHFDI/04111/18",
+                "name": "Jump Warriors",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 9062002300,
+            "type": "node",
+            "name": "Fairy Dell Paddling Pool",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.1392838,
+                "lon": 0.3456052
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Fairy Dell Paddling Pool"
+            }
+        },
+        {
+            "id": 9074852749,
+            "type": "node",
+            "name": "Captain Kids Adventure World",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.1448302,
+                "lon": 0.3464529
+            },
+            "tags": {
+                "name": "Captain Kids Adventure World",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 9118245704,
+            "type": "node",
+            "name": "LaplandUK",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://laplanduk.freshdesk.com/support/home",
+            "opening_hours": "",
+            "address": {
+                "street": "Whitmoor Forest, Swinley Road, Winkfield Row",
+                "city": "Ascot",
+                "postcode": "SL5 8BD"
+            },
+            "location": {
+                "lat": 51.4083412,
+                "lon": -0.7083987
+            },
+            "tags": {
+                "addr:city": "Ascot",
+                "addr:postcode": "SL5 8BD",
+                "addr:street": "Whitmoor Forest, Swinley Road, Winkfield Row",
+                "name": "LaplandUK",
+                "smoking": "no",
+                "tourism": "theme_park",
+                "website": "https://laplanduk.freshdesk.com/support/home"
+            }
+        },
+        {
+            "id": 9311072857,
+            "type": "node",
+            "name": "Hall Hill Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.hallhillfarm.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.7899443,
+                "lon": -1.8050569
+            },
+            "tags": {
+                "addr:city": "Durham",
+                "addr:postcode": "DH7 0TA",
+                "name": "Hall Hill Farm",
+                "note": "Boundary unlcear between farm and visitor section",
+                "tourism": "theme_park",
+                "website": "https://www.hallhillfarm.co.uk/",
+                "wikidata": "Q5642597",
+                "wikipedia": "en:Hall Hill Farm"
+            }
+        },
+        {
+            "id": 9434201310,
+            "type": "node",
+            "name": "The Wave",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://thewavecoventry.com/",
+            "opening_hours": "",
+            "address": {
+                "street": "New Union Street",
+                "city": "Coventry",
+                "postcode": "CV1 2PS"
+            },
+            "location": {
+                "lat": 52.405679,
+                "lon": -1.5112978
+            },
+            "tags": {
+                "addr:city": "Coventry",
+                "addr:postcode": "CV1 2PS",
+                "addr:street": "New Union Street",
+                "leisure": "water_park",
+                "name": "The Wave",
+                "operator": "CV Life",
+                "website": "https://thewavecoventry.com/"
+            }
+        },
+        {
+            "id": 9483088561,
+            "type": "node",
+            "name": "Reptilarium",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Fort Victoria"
+            },
+            "location": {
+                "lat": 50.7069271,
+                "lon": -1.5211973
+            },
+            "tags": {
+                "addr:street": "Fort Victoria",
+                "name": "Reptilarium",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 9671982472,
+            "type": "node",
+            "name": "Trafford Watersports Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Rifle Road"
+            },
+            "location": {
+                "lat": 53.4313693,
+                "lon": -2.3000357
+            },
+            "tags": {
+                "addr:street": "Rifle Road",
+                "leisure": "water_park",
+                "name": "Trafford Watersports Centre"
+            }
+        },
+        {
+            "id": 9782470192,
+            "type": "node",
+            "name": "Jacksons at Jedburgh",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.jacksonsatjedburgh.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 55.4458215,
+                "lon": -2.54083
+            },
+            "tags": {
+                "email": "jas@jacksonsatjedburgh.co.uk",
+                "fee": "yes",
+                "name": "Jacksons at Jedburgh",
+                "tourism": "zoo",
+                "website": "https://www.jacksonsatjedburgh.co.uk/",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 9867091772,
+            "type": "node",
+            "name": "Greeb Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://landsend-landmark.co.uk/attractions/greeb-farm/",
+            "opening_hours": "Mo-Su 10:00-17:00",
+            "address": null,
+            "location": {
+                "lat": 50.0625635,
+                "lon": -5.7109545
+            },
+            "tags": {
+                "name": "Greeb Farm",
+                "opening_hours": "Mo-Su 10:00-17:00",
+                "tourism": "zoo",
+                "website": "https://landsend-landmark.co.uk/attractions/greeb-farm/",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 9911308350,
+            "type": "node",
+            "name": "The Lagoon Activity Centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://lagoonactivitycentre.ie",
+            "opening_hours": "May-Sep: Mo-Su 10:00-18:00",
+            "address": null,
+            "location": {
+                "lat": 51.5774899,
+                "lon": -9.0270433
+            },
+            "tags": {
+                "addr:city": "Rosscarbery",
+                "email": "info@lagoonactivitycentre.ie",
+                "leisure": "water_park",
+                "name": "The Lagoon Activity Centre",
+                "opening_hours": "May-Sep: Mo-Su 10:00-18:00",
+                "phone": "+353 87 746 2720",
+                "sport": "kayak",
+                "website": "https://lagoonactivitycentre.ie"
+            }
+        },
+        {
+            "id": 10078342555,
+            "type": "node",
+            "name": "Escape 2 Play",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Cherry Holt Road",
+                "city": "Bourne",
+                "postcode": "PE10 9LA"
+            },
+            "location": {
+                "lat": 52.7631092,
+                "lon": -0.3611192
+            },
+            "tags": {
+                "addr:city": "Bourne",
+                "addr:postcode": "PE10 9LA",
+                "addr:street": "Cherry Holt Road",
+                "addr:unit": "Unit 3, Hereward Industrial Estate",
+                "fhrs:authority": "South Kesteven",
+                "fhrs:id": "1399135",
+                "fhrs:local_authority_id": "89410",
+                "name": "Escape 2 Play",
+                "toilets:wheelchair": "yes",
+                "tourism": "theme_park",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "id": 10085073258,
+            "type": "node",
+            "name": "VR Escape",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.909025,
+                "lon": -0.6389853
+            },
+            "tags": {
+                "name": "VR Escape",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 10093405553,
+            "type": "node",
+            "name": "Urban Wolf Axe Throwing",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.9122196,
+                "lon": -0.6420887
+            },
+            "tags": {
+                "name": "Urban Wolf Axe Throwing",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 10099239448,
+            "type": "node",
+            "name": "Fun Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Dysart Road",
+                "city": "Grantham",
+                "postcode": "NG31 7LE"
+            },
+            "location": {
+                "lat": 52.9097319,
+                "lon": -0.6529704
+            },
+            "tags": {
+                "addr:city": "Grantham",
+                "addr:postcode": "NG31 7LE",
+                "addr:street": "Dysart Road",
+                "fhrs:authority": "South Kesteven",
+                "fhrs:id": "237974",
+                "fhrs:local_authority_id": "7065",
+                "name": "Fun Farm",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 10577780557,
+            "type": "node",
+            "name": "Dorset Adventure Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.dorsetadventurepark.com/",
+            "opening_hours": "",
+            "address": {
+                "street": "Studland Road",
+                "postcode": "BH20 5JG"
+            },
+            "location": {
+                "lat": 50.6452071,
+                "lon": -2.055249
+            },
+            "tags": {
+                "addr:postcode": "BH20 5JG",
+                "addr:street": "Studland Road",
+                "name": "Dorset Adventure Park",
+                "tourism": "theme_park",
+                "website": "https://www.dorsetadventurepark.com/"
+            }
+        },
+        {
+            "id": 10761058345,
+            "type": "node",
+            "name": "Adlington Petting Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.adlingtonpettingfarm.com/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 53.3308736,
+                "lon": -2.0958634
+            },
+            "tags": {
+                "name": "Adlington Petting Farm",
+                "tourism": "zoo",
+                "website": "https://www.adlingtonpettingfarm.com/",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 10816824305,
+            "type": "node",
+            "name": "Blast Windsurfing and Windfoiling",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://blastwatersportsdublin.com/",
+            "opening_hours": "Su 10:00-18:00; Tu-Sa 10:00-20:00",
+            "address": {
+                "street": "Kilcrea Road"
+            },
+            "location": {
+                "lat": 53.4690824,
+                "lon": -6.1755492
+            },
+            "tags": {
+                "addr:street": "Kilcrea Road",
+                "contact:facebook": "BlastWindsurfing",
+                "email": "theanthonybyrne@gmail.com",
+                "leisure": "water_park",
+                "name": "Blast Windsurfing and Windfoiling",
+                "opening_hours": "Su 10:00-18:00; Tu-Sa 10:00-20:00",
+                "phone": "+353872191365",
+                "website": "https://blastwatersportsdublin.com/"
+            }
+        },
+        {
+            "id": 10876493845,
+            "type": "node",
+            "name": "Fenland Aqua Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://fenlandaquapark.com",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.5536905,
+                "lon": -0.1051494
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Fenland Aqua Park",
+                "website": "https://fenlandaquapark.com"
+            }
+        },
+        {
+            "id": 11222043323,
+            "type": "node",
+            "name": "Dwyfor Ranch Rabbit farm and Animal Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.9248042,
+                "lon": -4.2729244
+            },
+            "tags": {
+                "addr:city": "Criccieth",
+                "addr:housename": "Rabbit Farm",
+                "addr:place": "Llanystumdwy",
+                "addr:postcode": "LL52 0SU",
+                "name": "Dwyfor Ranch Rabbit farm and Animal Park",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 11411870932,
+            "type": "node",
+            "name": "North Coast Alpacas",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://northcoastalpacas.co.uk/",
+            "opening_hours": "",
+            "address": {
+                "street": "Ballylagan Road",
+                "city": "Coleraine",
+                "postcode": "BT52 2PQ"
+            },
+            "location": {
+                "lat": 55.1745765,
+                "lon": -6.6282208
+            },
+            "tags": {
+                "addr:city": "Coleraine",
+                "addr:housenumber": "33",
+                "addr:postcode": "BT52 2PQ",
+                "addr:street": "Ballylagan Road",
+                "name": "North Coast Alpacas",
+                "phone": "+44 7738009626",
+                "tourism": "zoo",
+                "website": "https://northcoastalpacas.co.uk/",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 11417915178,
+            "type": "node",
+            "name": "Foxdown Childrens Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://foxdownfarm.co.uk/",
+            "opening_hours": "Mo-Sa 10:00-17:00; We off; SH We 10:00-17:00",
+            "address": null,
+            "location": {
+                "lat": 50.7945021,
+                "lon": -2.8703164
+            },
+            "tags": {
+                "attraction": "animal",
+                "contact:facebook": "https://www.facebook.com/foxdownchildrensfarm/",
+                "contact:instagram": "https://www.instagram.com/foxdownchildrensfarm",
+                "email": "info@foxdownfarm.co.uk",
+                "name": "Foxdown Childrens Farm",
+                "opening_hours": "Mo-Sa 10:00-17:00; We off; SH We 10:00-17:00",
+                "phone": "07793 037937",
+                "tourism": "zoo",
+                "website": "https://foxdownfarm.co.uk/",
+                "wheelchair": "limited",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 11438374833,
+            "type": "node",
+            "name": "PJ Land",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "Mo-Su 09:00-21:00",
+            "address": {
+                "street": "A23",
+                "city": "Belfast",
+                "postcode": "BT5 4AE"
+            },
+            "location": {
+                "lat": 54.5992198,
+                "lon": -5.9131173
+            },
+            "tags": {
+                "addr:city": "Belfast",
+                "addr:housename": "The Waterside",
+                "addr:housenumber": "104",
+                "addr:postcode": "BT5 4AE",
+                "addr:street": "A23",
+                "name": "PJ Land",
+                "opening_hours": "Mo-Su 09:00-21:00",
+                "payment:cash": "yes",
+                "payment:contactless": "yes",
+                "tourism": "theme_park"
+            }
+        },
+        {
+            "id": 11667146272,
+            "type": "node",
+            "name": "Hawkeye School of Falconry",
+            "category": "Entertainment",
+            "description": "Fly, handle, feed and interact with hawks and owls.",
+            "website": "https://www.hawkeyefalconry.ie/",
+            "opening_hours": "Mo-Su 09:00-17:30; Jan Off",
+            "address": null,
+            "location": {
+                "lat": 52.6456093,
+                "lon": -7.1957577
+            },
+            "tags": {
+                "addr:place": "Lyrath Estate",
+                "addr:postcode": "R95 F685",
+                "contact:email": "info@hawkeyefalconry.ie",
+                "contact:facebook": "https://www.facebook.com/hawkeyeschooloffalconry/",
+                "contact:instagram": "hawkeyeschooloffalconryireland",
+                "contact:phone": "083 003 9743",
+                "description": "Fly, handle, feed and interact with hawks and owls.",
+                "min_age": "7",
+                "name": "Hawkeye School of Falconry",
+                "opening_hours": "Mo-Su 09:00-17:30; Jan Off",
+                "operator": "Hawkeye Falconry",
+                "operator:type": "private",
+                "payment:gift_card": "yes",
+                "reservation": "yes",
+                "tourism": "zoo",
+                "website": "https://www.hawkeyefalconry.ie/",
+                "zoo": "falconry"
+            }
+        },
+        {
+            "id": 11805006210,
+            "type": "node",
+            "name": "The Jungle Zoo",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": {
+                "street": "Kings Road",
+                "city": "Cleethorpes",
+                "postcode": "DN35 0AG"
+            },
+            "location": {
+                "lat": 53.5450674,
+                "lon": -0.0110333
+            },
+            "tags": {
+                "addr:city": "Cleethorpes",
+                "addr:postcode": "DN35 0AG",
+                "addr:street": "Kings Road",
+                "fhrs:authority": "North East Lincolnshire",
+                "name": "The Jungle Zoo",
+                "tourism": "zoo"
+            }
+        },
+        {
+            "id": 11824929310,
+            "type": "node",
+            "name": "Aquaventure",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.6627931,
+                "lon": -1.9626336
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Aquaventure"
+            }
+        },
+        {
+            "id": 11834718384,
+            "type": "node",
+            "name": "Peterborough Wake Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 52.5262843,
+                "lon": -0.2600357
+            },
+            "tags": {
+                "check_date": "2024-04-21",
+                "leisure": "water_park",
+                "name": "Peterborough Wake Park"
+            }
+        },
+        {
+            "id": 12048963673,
+            "type": "node",
+            "name": "Jungleland",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://www.junglelandtelford.com/",
+            "opening_hours": "Mo-Su 09:30-18:15",
+            "address": {
+                "street": "Trench Lock",
+                "city": "Telford",
+                "postcode": "TF1 6SZ"
+            },
+            "location": {
+                "lat": 52.7094454,
+                "lon": -2.4713629
+            },
+            "tags": {
+                "addr:city": "Telford",
+                "addr:country": "GB",
+                "addr:postcode": "TF1 6SZ",
+                "addr:street": "Trench Lock",
+                "contact:facebook": "Jungleland.Telford",
+                "name": "Jungleland",
+                "opening_hours": "Mo-Su 09:30-18:15",
+                "tourism": "theme_park",
+                "website": "https://www.junglelandtelford.com/"
+            }
+        },
+        {
+            "id": 12049819368,
+            "type": "node",
+            "name": "Monk Park Farm",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 54.2255023,
+                "lon": -1.2809931
+            },
+            "tags": {
+                "name": "Monk Park Farm",
+                "place": "farm",
+                "tourism": "zoo",
+                "zoo": "petting_zoo"
+            }
+        },
+        {
+            "id": 12056241358,
+            "type": "node",
+            "name": "VRXperience",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.8638523,
+                "lon": -2.2475959
+            },
+            "tags": {
+                "amusement_arcade": "virtual_reality",
+                "leisure": "amusement_arcade",
+                "name": "VRXperience",
+                "tourism": "attraction"
+            }
+        },
+        {
+            "id": 12064556169,
+            "type": "node",
+            "name": "Exotic Zoo Wildlife Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://exoticzoo.co.uk",
+            "opening_hours": "Mo-Su 11:00-16:00",
+            "address": {
+                "street": "Hinkshay Road",
+                "city": "Telford",
+                "postcode": "TF4 3GZ"
+            },
+            "location": {
+                "lat": 52.6678625,
+                "lon": -2.4459893
+            },
+            "tags": {
+                "addr:city": "Telford",
+                "addr:country": "GB",
+                "addr:postcode": "TF4 3GZ",
+                "addr:street": "Hinkshay Road",
+                "contact:facebook": "telfordzoo",
+                "contact:instagram": "exotic_zoo_",
+                "contact:twitter": "exoticzoo",
+                "email": "info@exoticzoo.co.uk",
+                "name": "Exotic Zoo Wildlife Park",
+                "opening_hours": "Mo-Su 11:00-16:00",
+                "tourism": "zoo",
+                "website": "https://exoticzoo.co.uk"
+            }
+        },
+        {
+            "id": 12071965814,
+            "type": "node",
+            "name": "Spring Valley Watersports centre",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://springvalleylakes.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.7283021,
+                "lon": -3.6631753
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Spring Valley Watersports centre",
+                "website": "https://springvalleylakes.co.uk/"
+            }
+        },
+        {
+            "id": 12083994727,
+            "type": "node",
+            "name": "The Meadows Wildlife Park",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://themeadowswildlifepark.co.uk",
+            "opening_hours": "",
+            "address": {
+                "street": "Gypsy Lane",
+                "city": "Caerphilly",
+                "postcode": "CF15 7UN"
+            },
+            "location": {
+                "lat": 51.5718149,
+                "lon": -3.2533666
+            },
+            "tags": {
+                "addr:city": "Caerphilly",
+                "addr:postcode": "CF15 7UN",
+                "addr:street": "Gypsy Lane",
+                "contact:facebook": "themeadowswildlifepark",
+                "contact:instagram": "themeadowswildlifepark",
+                "fhrs:id": "1204603",
+                "name": "The Meadows Wildlife Park",
+                "phone": "+44 29 2080 7185",
+                "tourism": "zoo",
+                "website": "https://themeadowswildlifepark.co.uk",
+                "zoo": "wildlife_park"
+            }
+        },
+        {
+            "id": 12120970801,
+            "type": "node",
+            "name": "Vintage Funfair",
+            "category": "Entertainment",
+            "description": "",
+            "website": "",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.7437201,
+                "lon": -4.7320973
+            },
+            "tags": {
+                "name": "Vintage Funfair",
+                "operator": "Folly Farm",
+                "tourism": "theme_park",
+                "wheelchair": "yes"
+            }
+        },
+        {
+            "id": 12239827558,
+            "type": "node",
+            "name": "Splash Park Barking",
+            "category": "Entertainment",
+            "description": "",
+            "website": "https://splashparkbarking.co.uk/",
+            "opening_hours": "",
+            "address": null,
+            "location": {
+                "lat": 51.5466773,
+                "lon": 0.0876515
+            },
+            "tags": {
+                "leisure": "water_park",
+                "name": "Splash Park Barking",
+                "website": "https://splashparkbarking.co.uk/"
+            }
+        }
+    ]
+}
