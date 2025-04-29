@@ -14,6 +14,46 @@
             height: calc(100vh - 8rem); /* Accounts for header and footer */
             width: 100%;
         }
+        .side-panel {
+            position: fixed;
+            left: 0;
+            top: 4rem;
+            width: 350px;
+            height: calc(100vh - 8rem);
+            background: white;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 1rem;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .side-panel.active {
+            transform: translateX(0);
+        }
+        .side-panel img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .side-panel h3 {
+            font-size: 1.5rem;
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+        .side-panel p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        .map-container {
+            margin-left: 0;
+            transition: margin-left 0.3s ease-in-out;
+        }
+        .map-container.with-panel {
+            margin-left: 350px;
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
@@ -26,8 +66,15 @@
             </nav>
         </div>
     </header>
-    <main class="flex-grow">
-        <div id="map" class="w-full"></div>
+    <main class="flex-grow relative">
+        <div class="side-panel" id="landmarkPanel">
+            <div id="landmarkContent">
+                <!-- Content will be dynamically inserted here -->
+            </div>
+        </div>
+        <div class="map-container" id="mapContainer">
+            <div id="map" class="w-full"></div>
+        </div>
     </main>
     <footer class="bg-gray-800 text-white mt-auto">
         <div class="container mx-auto px-4 py-6">
@@ -48,7 +95,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
     <script>
-        // Initialise map
+        // Initialize map
         const map = L.map('map').setView([54.5, -2], 6); // Centered on the UK
 
         // Add OpenStreetMap tiles
@@ -61,22 +108,55 @@
             {
                 name: "Big Ben",
                 location: [51.5007, -0.1246],
+                description: "The iconic clock tower of the Palace of Westminster, officially known as the Elizabeth Tower. Standing at 96 meters tall, it's one of London's most famous landmarks and a symbol of the United Kingdom.",
+                image: "https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             },
             {
                 name: "Stonehenge",
                 location: [51.1789, -1.8262],
+                description: "A prehistoric monument in Wiltshire, England, consisting of a ring of standing stones. Built around 3000 BC, it's one of the most famous landmarks in the UK and a UNESCO World Heritage Site.",
+                image: "https://images.unsplash.com/photo-QMwbv0K8Ves?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
             },
             {
                 name: "Edinburgh Castle",
                 location: [55.9486, -3.2008],
-            },
-
+                description: "A historic fortress which dominates the skyline of Edinburgh, Scotland. Built on Castle Rock, it has been a royal residence, military garrison, and prison throughout its long history.",
+                image: "https://images.unsplash.com/photo-1513618363798-765d6a4b0a1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            }
         ];
+
+        // Get DOM elements
+        const landmarkPanel = document.getElementById('landmarkPanel');
+        const landmarkContent = document.getElementById('landmarkContent');
+        const mapContainer = document.getElementById('mapContainer');
+
+        // Function to show landmark details
+        function showLandmarkDetails(landmark) {
+            const content = `
+                <img src="${landmark.image}" alt="${landmark.name}">
+                <h3>${landmark.name}</h3>
+                <p>${landmark.description}</p>
+            `;
+            landmarkContent.innerHTML = content;
+            landmarkPanel.classList.add('active');
+            mapContainer.classList.add('with-panel');
+        }
 
         // Add markers to the map
         landmarks.forEach(landmark => {
             const marker = L.marker(landmark.location).addTo(map);
-            marker.bindPopup(`<b>${landmark.name}</b>`);
+            
+            marker.on('click', () => {
+                showLandmarkDetails(landmark);
+            });
+        });
+
+        // Close panel when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!landmarkPanel.contains(e.target) && !e.target.closest('.leaflet-marker-icon')) {
+                landmarkPanel.classList.remove('active');
+                mapContainer.classList.remove('with-panel');
+            }
         });
     </script>
 </body>
