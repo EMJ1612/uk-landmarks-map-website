@@ -1,0 +1,53 @@
+.banner{
+    background-color: #ffffff;
+    margin-top: auto;
+}
+
+.footer{
+    background-color: #1f2937;
+    margin-bottom: 0;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height: 60px;
+}
+.header{
+    background-color:  #1f2937;
+    margin-top: auto;
+}
+.container{
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #ffffff;
+}
+.home{
+    color:  #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.map{
+    color:  #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.container.navigation{
+    display: flex;
+    gap: 1rem;
+}
+.footer-text{
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.footer-text:hover{
+    color: #ffffff;
+}

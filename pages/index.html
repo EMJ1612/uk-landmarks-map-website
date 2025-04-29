@@ -1,4 +1,111 @@
 <!DOCTYPE html>
+
+<style>
+.container.main-container {
+      margin: auto;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container.text-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; 
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #000000;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+      color: #1f2937;
+      text-align: center;
+
+    }
+    .description-container{
+      padding: 0.5rem;
+      border-radius: 8px;
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .maps-slider-container{
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .container-picture{
+       width: 100%;
+       height: 400px;
+       padding: 1rem;
+       border-radius: 8px;
+       display: grid;
+       overflow: hidden;
+    }
+    .image-container{
+         position: relative;
+         display: inline-block;
+         width: 100%;
+         height: 100%;
+         overflow: hidden;
+    }
+    .image-container img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         border-radius: 8px;
+    }
+
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Swiper Navigation Buttons */
+    .swiper .swiper-button-next,
+    .swiper .swiper-button-prev {
+        color: #ffffff !important;
+        transition: all 0.3s ease;
+    }
+
+    .swiper .swiper-button-next:after,
+    .swiper .swiper-button-prev:after {
+        font-size: 25px !important;
+        font-weight: bold !important;
+    }
+
+    .swiper .swiper-button-next:hover,
+    .swiper .swiper-button-prev:hover {
+        transform: scale(1.1) !important;
+    }
+
+    .swiper .swiper-button-next {
+        right: 15px !important;
+    }
+
+    .swiper .swiper-button-prev {
+        left: 15px !important;
+    }
+        
+    
+</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,42 +114,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/common.css">
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">EXPLORE UK</a>
-            <nav class="space-x-4">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="map.html" class="text-gray-600 hover:text-blue-600">Map</a>
+<body class="banner">
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">EXPLORE UK</a>
+            <nav class="container.navigation">
+                <a href="index.html" class="home">Home</a>
+                <a href="map.html" class="map">Map</a>
             </nav>
         </div>
     </header>
-    <main class="container mx-auto px-4 py-8 flex-grow">
-        <div class="text-container flex flex-col items-center justify-center text-center">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4">UK Landmarks</h1>
-            <p class="text-lg text-gray-600 max-w-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+    <main class="container.main-container">
+        <div class="container.text-container">
+            <h1 class="title">UK Landmarks</h1>
+            <div class="description-container">
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+            </div>
         </div>
        <!-- Add image carousel -->
-        <div class="maps-slider-container mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="map-container">
-                <a href="map.html" class="block relative group">
-                    <img src="https://picsum.photos/1200/600" alt="Interactive Map" class="w-full h-96 object-cover rounded-lg transition-transform duration-300 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span class="text-white text-2xl font-bold">View Interactive Map</span>
-                    </div>
-                </a>
-            </div>
+        <div class="maps-slider-container">
+            <a href="map.html" class="container-picture">
+                <div class="image-container">
+                    <img  src="https://picsum.photos/1200/600">
+                    <div class="text">View Interactive Map</div>
+                </div>
+            </a>
             <div class="swiper image-slider w-full">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="https://picsum.photos/800/400?random=1" alt="Landmark 1" class="w-full h-96 object-cover rounded-lg">
+                        <div class="container-picture">
+                            <div class="image-container">
+                                <img src="https://picsum.photos/800/400?random=1" alt="Landmark 1">
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://picsum.photos/800/400?random=2" alt="Landmark 2" class="w-full h-96 object-cover rounded-lg">
+                        <div class="container-picture">
+                            <div class="image-container">
+                                <img src="https://picsum.photos/800/400?random=2" alt="Landmark 2">
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <img src="https://picsum.photos/800/400?random=3" alt="Landmark 3" class="w-full h-96 object-cover rounded-lg">
+                        <div class="container-picture">
+                            <div class="image-container">
+                                <img src="https://picsum.photos/800/400?random=3" alt="Landmark 3">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Add pagination -->
@@ -54,19 +174,8 @@
         </div>
     </main>
     <!-- Footer basic layout -->
-    <footer class="bg-gray-800 text-white mt-auto">
-        <div class="container mx-auto px-4 py-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="text-sm">© 2025 EXPLORE UK. All rights reserved.</p>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" class="text-gray-300 hover:text-white transition-colors">Contact Us</a>
-                </div>
-            </div>
-        </div>
+    <footer class="footer">
+        <p class="footer-text">© 2025 EXPLORE UK. All rights reserved.</p>
     </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
