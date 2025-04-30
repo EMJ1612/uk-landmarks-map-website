@@ -31,15 +31,17 @@
     color:  #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-right: 1rem;
 }
 .map{
     color:  #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-left: 1rem;
 }
 .container.navigation{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 .footer-text{
     color: #ffffff;
