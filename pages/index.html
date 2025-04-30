@@ -15,6 +15,7 @@
       flex-direction: column;
       align-items: center;
       text-align: center; 
+      margin-bottom: 2rem;
     }
 
     .title {
@@ -27,7 +28,7 @@
     }
 
     .description {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: #1f2937;
       text-align: center;
 
@@ -43,12 +44,12 @@
       margin-top: 1rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.5rem;
+      gap: 1rem;
+      padding: 1rem 0rem 3rem
     }
     .container-picture{
        width: 100%;
        height: 400px;
-       padding: 1rem;
        border-radius: 8px;
        display: grid;
        overflow: hidden;
@@ -67,7 +68,7 @@
          border-radius: 8px;
     }
 
-    .text{
+    .container-picture .text{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -76,6 +77,19 @@
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(3px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+    a.container-picture:hover .text{
+        backdrop-filter: blur(0px);
+        background-color: rgba(0, 0, 0, 00);
+        color: rgba(255, 255, 255, 0);
     }
 
     /* Swiper Navigation Buttons */
@@ -97,12 +111,36 @@
     }
 
     .swiper .swiper-button-next {
-        right: 15px !important;
+        right: 30px !important;
     }
 
     .swiper .swiper-button-prev {
-        left: 15px !important;
+        left: 30px !important;
     }
+
+    .swiper-pagination {
+        bottom: 20px !important;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) !important;
+        opacity: 0.7 !important;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1 !important;
+    }
+
+    
         
     
 </style>
@@ -126,18 +164,18 @@
             </nav>
         </div>
     </header>
-    <main class="container.main-container">
-        <div class="container.text-container">
+    <main class="main-container">
+        <div class="container text-container">
             <h1 class="title">UK Landmarks</h1>
             <div class="description-container">
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
             </div>
         </div>
        <!-- Add image carousel -->
-        <div class="maps-slider-container">
+        <div class="maps-slider-container container">
             <a href="map.html" class="container-picture">
                 <div class="image-container">
-                    <img  src="https://picsum.photos/1200/600">
+                    <img  src="/images/map-preview.png">
                     <div class="text">View Interactive Map</div>
                 </div>
             </a>
@@ -175,7 +213,9 @@
     </main>
     <!-- Footer basic layout -->
     <footer class="footer">
-        <p class="footer-text">© 2025 EXPLORE UK. All rights reserved.</p>
+        <div class="container">
+            <p class="footer-text">© 2025 EXPLORE UK. All rights reserved.</p>
+        </div>
     </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
