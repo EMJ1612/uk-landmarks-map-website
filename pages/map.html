@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
         crossorigin=""/>
-    <link rel="stylesheet" href="css/common.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/pages/css/common.css">
     <style>
         #map { 
             height: calc(100vh - 8rem); /* Accounts for header and footer */
@@ -59,17 +61,38 @@
       margin-bottom: 1rem;
     }
     .side-panel h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #1a365d;
       margin-bottom: 1rem;
     }
     .side-panel p {
       color: #4a5568;
       line-height: 1.6;
-      margin-bottom: 1rem;
     }
-    .learn-more-button:hover {
-        background-color: #1d4ed8;
+    .side-panel .learn-more-button {
+        background-color: #ffffff;
+        border: solid 1px #e1e1e1;
+        display: block;
+        border-radius: 4px;
+        padding: 8px 12px;
+        font-size: 16px;
+        color: #333;
+        box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0);
+        transform: translate(0, 0);
+        margin-top: .5rem;
+        transition: all 0.3s ease;
+        max-width: max-content;
+        width: 100%;
+    }
+    .side-panel .learn-more-button:hover {
+        box-shadow: 2px 2px 4px 0 rgba(2, 0, 0, 0.25);
+        transform: translate(-2px, -2px);
+    }
+    .side-panel .learn-more-button.map-button {
+        margin-top: 2rem;
+    }
+    .side-panel .description-text {
+        margin-top: 1rem;
     }
     .landmark-content-wrapper {
         position: relative;
@@ -116,14 +139,16 @@
     .viewpoint-marker {
         background-color: #9f7aea;
     }
+
     /* Filter panel styles */
     .filter-panel {
         position: fixed;
         top: 4rem;
         right: 0;
-        width: 200px;
-        background: white;
-        padding: 1rem;
+        width: max-content;
+        background: rgba(220, 220, 220, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 1rem 2rem 1rem 1rem;
         box-shadow: -2px 0 5px rgba(0,0,0,0.1);
         z-index: 1000;
         margin-top: 50px;
@@ -131,6 +156,9 @@
     .filter-panel h3 {
         margin-bottom: 1rem;
         color: #1a365d;
+        font-weight: 600;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+        padding-bottom: .5rem
     }
     .filter-option {
         display: flex;
@@ -138,11 +166,49 @@
         margin-bottom: 0.5rem;
     }
     .filter-option input[type="checkbox"] {
-        margin-right: 0.5rem;
+        display: none;
     }
     .filter-option label {
         cursor: pointer;
+        padding-left: 50px;
+        position: relative;
+        color: rgba(0, 0, 0, 0.3);
+        transition: color 0.3s ease;
     }
+    .filter-option label::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 22px;
+        border-radius: 100px;
+        background-color: #eee;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .filter-option label::after {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease;
+    }   
+    
+    .filter-option input[type="checkbox"]:checked + label {
+        color: rgba(0, 0, 0, 1);
+    }
+    .filter-option input[type="checkbox"]:checked + label::after {
+        left: 20px;
+    }
+    
     /* Side panel content styles */
     .side-panel .content-box {
         background: #f8f9fa;
@@ -192,7 +258,7 @@
             </nav>
         </div>
     </header>
-    <main class="flex-grow relative">
+    <main class="flex-grow relative z-1">
         <div class="side-panel" id="landmarkPanel">
             <button class="close-button" id="closePanel">×</button>
             <div id="landmarkContent">
@@ -392,6 +458,7 @@
 
         // Function to show landmark details
         async function showLandmarkDetails(landmark) {
+            console.log(landmark);
             const imageUrl = await fetchLandmarkImage(landmark.name);
             let description = landmark.description;
             let address = null;
@@ -408,16 +475,20 @@
             if (landmark.lat && landmark.lon) {
                 address = await fetchAddress(landmark.lat, landmark.lon);
             }
-
-            const content = `
-                <div class="image-container">
-                    <img src="${imageUrl}" 
+            let content = '';
+            if (imageUrl) {
+                content += `
+                    <div class="image-container">
+                        <img src="${imageUrl}" 
                          alt="${landmark.name}" 
                          onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/United_Kingdom_location_map.svg/500px-United_Kingdom_location_map.svg.png';">
-                </div>
-                <h3>${landmark.name}</h3>
-                ${address ? `<p><i class="fas fa-map-marker-alt mr-2"></i>${address}</p>` : ''}
-                <p>${description}</p>
+                    </div>`
+            }
+            content += `
+                <h3 class="landmark-name">${landmark.name}</h3>
+                ${address ? `<p class="address-text"><i class="fas fa-map-marker-alt mr-2"></i>${address}</p>` : ''}
+                <p class="description-text">${description}</p>
+                ${landmark.lat && landmark.lon ? `<a href="http://maps.google.com/maps?q=${landmark.lat},${landmark.lon}" target="_blank" class="learn-more-button map-button">View on Google Maps</a>` : ''}
                 ${landmark.website ? `<a href="${landmark.website}" target="_blank" class="learn-more-button">Learn More</a>` : ''}
             `;
             landmarkContent.innerHTML = content;
