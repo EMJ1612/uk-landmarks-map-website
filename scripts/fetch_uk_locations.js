@@ -5,7 +5,7 @@ const fetch = require('node-fetch');
 async function fetchUkLocations() {
     console.log("Fetching UK locations from OpenStreetMap...");
     
-    // Overpass API query with bounding box for UK mainland
+    // Overpass API query for UK mainland
     const query = `
     [out:json][timeout:90];
     (

@@ -540,7 +540,7 @@
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
-        // Create marker clusters for each category
+        // Create marker clusters for each category to improve performance
         const markerClusters = {
             landmarks: L.markerClusterGroup(),
             entertainment: L.markerClusterGroup(),
@@ -692,7 +692,7 @@
                 landmarkPanel.classList.remove('active');
                 mapContainer.classList.remove('with-panel');
                 
-                // Wait for the close animation to complete (300ms as defined in CSS)
+                // Wait for the close animation to complete
                 await new Promise(resolve => setTimeout(resolve, 300));
             }
 
@@ -721,6 +721,7 @@
                          onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/United_Kingdom_location_map.svg/500px-United_Kingdom_location_map.svg.png';">
                     </div>`
             }
+            // Use Google Maps to implement a directions button and learn more button
             content += `
                 <h3 class="landmark-name">${landmark.name}</h3>
                 ${address ? `<p class="address-text"><i class="fas fa-map-marker-alt mr-2"></i>${address}</p>` : ''}
@@ -742,7 +743,7 @@
                 const data = await response.json();
                 
                 if (data.elements) {
-                    // Process markers in batches
+                    // Process markers in batches for performance
                     const batchSize = 1000;
                     const elements = data.elements;
                     
