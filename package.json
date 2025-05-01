@@ -4,7 +4,7 @@
   "description": "Interactive map of UK landmarks",
   "main": "index.js",
   "scripts": {
-    "fetch-cities": "node scripts/fetch_uk_cities.js"
+    "fetch-locations": "node scripts/fetch_uk_locations.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.7"

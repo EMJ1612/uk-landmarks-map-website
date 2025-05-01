@@ -370,8 +370,9 @@
         // Initialize map
         const map = L.map('map').setView([54.5, -2], 6); // Centered on the UK
 
-        // Store all landmarks for search functionality
+        // Store all landmarks and locations for search functionality
         let allLandmarks = [];
+        let allLocations = [];
 
         // Function to add landmark to search index
         function addToSearchIndex(landmark, category) {
@@ -382,7 +383,20 @@
                 website: landmark.website || null,
                 lat: landmark.lat || landmark.location?.lat,
                 lon: landmark.lon || landmark.location?.lon,
-                icon: getCategoryIcon(category)
+                icon: getCategoryIcon(category),
+                type: 'landmark'
+            });
+        }
+
+        // Function to add location to search index
+        function addLocationToSearchIndex(location) {
+            allLocations.push({
+                name: location.name,
+                lat: location.lat,
+                lon: location.lon,
+                type: location.type,
+                population: location.population,
+                icon: getLocationIcon(location.type)
             });
         }
 
@@ -404,11 +418,52 @@
             }
         }
 
+        // Function to get location icon
+        function getLocationIcon(type) {
+            switch(type) {
+                case 'city':
+                    return 'fa-city';
+                case 'town':
+                    return 'fa-building';
+                case 'village':
+                    return 'fa-home';
+                case 'hamlet':
+                    return 'fa-house';
+                case 'suburb':
+                    return 'fa-building-user';
+                default:
+                    return 'fa-map-marker-alt';
+            }
+        }
+
         // Function to perform search
         function performSearch(query) {
-            const results = allLandmarks.filter(landmark => 
+            const landmarkResults = allLandmarks.filter(landmark => 
                 landmark.name.toLowerCase().includes(query.toLowerCase())
             );
+            
+            const locationResults = allLocations.filter(location => 
+                location.name.toLowerCase().includes(query.toLowerCase())
+            );
+            
+            // Combine and sort results (locations > landmarks)
+            const results = [
+                ...locationResults.map(location => ({...location, priority: 1})),
+                ...landmarkResults.map(landmark => ({...landmark, priority: 2}))
+            ].sort((a, b) => {
+                // Sort by priority first (locations before landmarks)
+                if (a.priority !== b.priority) {
+                    return a.priority - b.priority;
+                }
+                // Sort by type for locations
+                if (a.type !== b.type) {
+                    const typeOrder = { city: 1, town: 2, village: 3, hamlet: 4, suburb: 5, other: 6, landmark: 7 };
+                    return typeOrder[a.type] - typeOrder[b.type];
+                }
+                // Sort alphabetically within each type
+                return a.name.localeCompare(b.name);
+            });
+            
             return results.slice(0, 10); // Limit to 10 results
         }
 
@@ -426,16 +481,31 @@
                     div.innerHTML = `
                         <i class="fas ${result.icon}"></i>
                         ${result.name}
-                        <span class="category">${result.category}</span>
+                        ${result.type === 'landmark' 
+                            ? `<span class="category">${result.category}</span>`
+                            : `<span class="category">${result.type.charAt(0).toUpperCase() + result.type.slice(1)}</span>`
+                        }
                     `;
                     div.addEventListener('click', () => {
-                        showLandmarkDetails(result);
-                        searchResults.classList.remove('active');
-                        document.getElementById('searchInput').value = '';
-                        
-                        // Zoom to the selected location
-                        if (result.lat && result.lon) {
-                            map.setView([result.lat, result.lon], 18);
+                        if (result.type !== 'landmark') {
+                            // For locations center the map
+                            const zoomLevel = result.type === 'city' ? 12 : 
+                                           result.type === 'town' ? 13 : 
+                                           result.type === 'village' ? 14 : 
+                                           result.type === 'hamlet' ? 15 : 16;
+                            map.setView([result.lat, result.lon], zoomLevel);
+                            searchResults.classList.remove('active');
+                            document.getElementById('searchInput').value = '';
+                        } else {
+                            // For landmarks show the related details panel
+                            showLandmarkDetails(result);
+                            searchResults.classList.remove('active');
+                            document.getElementById('searchInput').value = '';
+                            
+                            // Zoom to the selected location
+                            if (result.lat && result.lon) {
+                                map.setView([result.lat, result.lon], 18);
+                            }
                         }
                     });
                     searchResults.appendChild(div);
@@ -503,7 +573,7 @@
                 // Channel Islands
                 { minLat: 49.0, maxLat: 49.5, minLon: -2.7, maxLon: -1.9 },
                 // France
-                { minLat: 48.0, maxLat: 51.5, minLon: -2.0, maxLon: 8.0 }
+                { minLat: 48.0, maxLat: 51.0, minLon: -2.0, maxLon: -1.0 }
             ];
             
             // Check if point is within main UK bounds
@@ -730,12 +800,25 @@
             loadMarkersFromFile('../data/tourist_spots_entertainment.json', 'Entertainment', markerClusters.entertainment),
             loadMarkersFromFile('../data/tourist_spots_museums_galleries.json', 'Museum/Gallery', markerClusters.museums),
             loadMarkersFromFile('../data/tourist_spots_outdoor_activities.json', 'Outdoor Activity', markerClusters.outdoor),
-            loadMarkersFromFile('../data/tourist_spots_viewpoints.json', 'Viewpoint', markerClusters.viewpoints)
+            loadMarkersFromFile('../data/tourist_spots_viewpoints.json', 'Viewpoint', markerClusters.viewpoints),
+            // Load locations data
+            fetch('../data/uk_locations.json')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.elements) {
+                        data.elements.forEach(location => {
+                            addLocationToSearchIndex(location);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading locations data:', error);
+                })
         ]).then(() => {
-            console.log('All markers loaded');
+            console.log('All markers and locations loaded');
             map.invalidateSize();
         }).catch(error => {
-            console.error('Error loading markers:', error);
+            console.error('Error loading data:', error);
         });
 
         // Update filter event listeners to work with clusters
